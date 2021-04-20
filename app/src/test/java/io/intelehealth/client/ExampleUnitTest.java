@@ -1,4 +1,4 @@
-package io.intelehealth.client;
+package io.TeleMedicine.client;
 
 import org.junit.Test;
 

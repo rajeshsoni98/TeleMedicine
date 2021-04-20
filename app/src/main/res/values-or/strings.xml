@@ -382,7 +382,7 @@
     <string name="patient_id_">"ସରାଗୀଙ୍କ ଆଇର୍:ି "</string>
     <string name="patient_name_title">ସରାଗୀଙ୍କ ନାମ:</string>
     <string name="patient_DOB">ସରାଗୀଙ୍କ ଜନମତାରିଖ:</string>
-    <string name="email_link" translatable="false">ନଜିର ପାସୱାର୍ଡରିସସଟ୍ କରିବା ପାଇଁଦୟାକରିସିଷ୍ଟମ୍ ଆର୍ମିନସିେଟରଙ୍କ ସହତି ସମ୍ପକଡକରନ୍ତୁକମିବା support@intelehealth.io ସର ଏକ ଇସମଲ୍ ପଠାନ</string>
+    <string name="email_link" translatable="false">ନଜିର ପାସୱାର୍ଡରିସସଟ୍ କରିବା ପାଇଁଦୟାକରିସିଷ୍ଟମ୍ ଆର୍ମିନସିେଟରଙ୍କ ସହତି ସମ୍ପକଡକରନ୍ତୁକମିବା support@TeleMedicine.io ସର ଏକ ଇସମଲ୍ ପଠାନ</string>
     <string name="contact_whatsapp">"ନଜିର ପାସୱାର୍ଡରିସସଟ୍ କରିବା ପାଇଁଦୟାକରିସିଷ୍ଟମ୍ ଆର୍ମିନସିେଟରଙ୍କ ସହତି ସମ୍ପକଡକରନ୍ତୁ "</string>
     <string name="identification_screen_required_fields" translatable="false">"ଦୟାକରିଦରକାରୀ ସେତ୍ରଗୁଡ଼କିୁପୂରଣ କରନ୍ତୁ "</string>
     <string name="identification_screen_error_dob" translatable="false">"ସବଧୈ ଜନମତାରିଖ ପ୍ରସବଶ କରନ୍ତୁ "</string>

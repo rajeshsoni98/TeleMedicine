@@ -1,4 +1,4 @@
-# Contributing to Intelehealth
+# Contributing to TeleMedicine
 We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
 
 - Reporting a bug
@@ -61,7 +61,7 @@ Borrowing these from [Facebook's Guidelines](https://github.com/facebook/draft-j
 * 2 spaces for indentation rather than tabs
 * You can try running `npm run lint` for style unification
 
-Check out [our Intelehealth App Developer Guide on our wiki](https://sites.google.com/a/intelehealth.io/team-wiki/the-intelehealth-platform/intelehealth-android-application/app-implementation-guide?authuser=0)
+Check out [our TeleMedicine App Developer Guide on our wiki](https://sites.google.com/a/TeleMedicine.io/team-wiki/the-TeleMedicine-platform/TeleMedicine-android-application/app-implementation-guide?authuser=0)
 for naming conventions, directory structure, and style guide.
 
 ## We use Material Design

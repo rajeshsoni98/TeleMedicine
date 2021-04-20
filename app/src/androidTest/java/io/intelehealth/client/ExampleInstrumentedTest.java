@@ -1,4 +1,4 @@
-package io.intelehealth.client;
+package io.TeleMedicine.client;
 
 import android.content.Context;
 import androidx.test.platform.app.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("io.intelehealth.client", appContext.getPackageName());
+        assertEquals("io.telemedicine.client", appContext.getPackageName());
     }
 }

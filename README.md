@@ -1,5 +1,5 @@
 
-# Intelehealth Android Client
+# TeleMedicine Android Client
 
 ## About
 
@@ -8,10 +8,10 @@ Over 400 million people all over the world lack access to basic healthcare servi
 Telemedicine provides an opportunity by connecting doctors in urban areas to patients in rural areas to provide healthcare. But health organizations that want to set up telemedicine programs do not have a lot of technology options to choose from. A robust software platform is the backbone of a good telemedicine program. The platform needs to be low cost, work even over an unreliable low bandwidth data connection and needs to be appropriately designed for health workers or nurses who may have never used a smartphone before.
 
 
-Intelehealth is an open source telemedicine platform that empowers local community health workers (CHWs) in rural communities to facilitate tele-consultations with remote doctors. It enables them to gather high quality clinical history and conduct clinically-relevant physical exams. Intelehealth can be used by hospitals, community health programs & governments to expand the reach of health services to ensure that vital primary care reaches remote and rural populations.
+TeleMedicine is an open source telemedicine platform that empowers local community health workers (CHWs) in rural communities to facilitate tele-consultations with remote doctors. It enables them to gather high quality clinical history and conduct clinically-relevant physical exams. TeleMedicine can be used by hospitals, community health programs & governments to expand the reach of health services to ensure that vital primary care reaches remote and rural populations.
 
 ## How it works
-* Intelehealth Android application runs on low bandwidth mobile data connection so it can operate in the remotest of settings
+* TeleMedicine Android application runs on low bandwidth mobile data connection so it can operate in the remotest of settings
 * The mobile app uses intelligent data-gathering flowcharts so that CHWs gather comprehensive clinical history and conduct clinically relevant physical exams
 * The app independently guides the CHW through a series of questions and exams based on the patient’s presenting symptoms and medical history
 * The CHW uploads the gathered clinical data to a cloud server which houses the patients Electronic Health Record (EHR) system
