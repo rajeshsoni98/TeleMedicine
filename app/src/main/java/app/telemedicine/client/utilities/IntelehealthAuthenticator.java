@@ -11,7 +11,7 @@ import android.os.Bundle;
 import android.provider.SyncStateContract;
 
 /**
- * Adds an Intelehealth android account which can be accessed through Android's Settings Screen..
+ * Adds an TeleMedicine android account which can be accessed through Android's Settings Screen..
  * <p>
  * Created by tusharjois on 9/5/16.
  */
