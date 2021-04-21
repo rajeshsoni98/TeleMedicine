@@ -395,7 +395,8 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
 
         public void loadLocale() {
             String langPref = "Language";
-            SharedPreferences prefs = this.getActivity().getSharedPreferences("TeleMedicine", Activity.MODE_PRIVATE);
+            SharedPreferences prefs = this.getActivity().getSharedPreferences
+                    ("TeleMedicine", Activity.MODE_PRIVATE);
             String language = prefs.getString(langPref, "");
             if (language != null) {
                 setLocale(language);
@@ -404,7 +405,8 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
 
         public void saveLocale(String lang) {
             String langPref = "Language";
-            SharedPreferences prefs = this.getActivity().getSharedPreferences("TeleMedicine", Activity.MODE_PRIVATE);
+            SharedPreferences prefs = this.getActivity().getSharedPreferences
+                    ("TeleMedicine", Activity.MODE_PRIVATE);
             SharedPreferences.Editor editor = prefs.edit();
             editor.putString(langPref, lang);
             prefs.getAll();

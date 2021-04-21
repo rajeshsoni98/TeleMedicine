@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TéléMédecine</string>
+    <string name="title_activity_login" translatable="false">TéléMédecine</string>
+    <string name="new_patient" translatable="false">Nouveau patient</string>
+    <string name="find_patient" translatable="false">Trouver des patients</string>
+    <string name="video_library" translatable="false">Vidéothèque</string>
+    <string name="today_visits">Visites du jour</string>
+    <string name="active_visits">Visites actives</string>
+</resources>
