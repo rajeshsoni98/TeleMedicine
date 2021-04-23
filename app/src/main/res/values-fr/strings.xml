@@ -6,7 +6,7 @@
     <string name="video_library" translatable="false">Vidéothèque</string>
     <string name="today_visits">Visites d\'aujourd\'hui</string>
     <string name="active_visits">Visites actives</string>
-    <string name="app_name" translatable="false">TéléMédecine</string>
+    <string name="app_name" translatable="false">AFIA</string>
     <string name="generic_the_flipping_word_next" translatable="false">Suivant</string>
     <string name="hint_required" translatable="false">Obligatoire</string>
     <string name="hint_optional" translatable="false">Optionnel</string>
@@ -399,7 +399,7 @@
     <string name="please_enter_url_and_key">Veuillez saisir l\'URL et la clé</string>
     <string name="please_enter_valid_license_key">Veuillez saisir une clé de licence valide</string>
     <string name="permission_denied">Permission refusée</string>
-    <string name="reject_permission_results"><! [CDATA [Si vous refusez l'autorisation, vous ne pouvez pas utiliser ce service \ n \ nVeuillez activer les autorisations dans [Paramètre]> [Permission]]]></string>
+    <string name="reject_permission_results"><![CDATA[Si vous refusez l'autorisation, vous ne pouvez pas utiliser ce service \ n \ nVeuillez activer les autorisations dans [Paramètre]> [Permission]]]></string>
     <string name="temperature_C">Température (C):</string>
     <string name="temperature_F">Température (F):</string>
     <string name="no_history_family_found">Aucun antécédent de maladie dans la famille fourni.</string>
