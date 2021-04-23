@@ -1,10 +1,421 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">TéléMédecine</string>
     <string name="title_activity_login" translatable="false">TéléMédecine</string>
     <string name="new_patient" translatable="false">Nouveau patient</string>
     <string name="find_patient" translatable="false">Trouver des patients</string>
     <string name="video_library" translatable="false">Vidéothèque</string>
-    <string name="today_visits">Visites du jour</string>
+    <string name="today_visits">Visites d\'aujourd\'hui</string>
     <string name="active_visits">Visites actives</string>
+    <string name="app_name" translatable="false">TéléMédecine</string>
+    <string name="generic_the_flipping_word_next" translatable="false">Suivant</string>
+    <string name="hint_required" translatable="false">Obligatoire</string>
+    <string name="hint_optional" translatable="false">Optionnel</string>
+    <string name="tag_optional" translatable="false">optionnel</string>
+    <string name="generic_ok" translatable="false">OK</string>
+    <string name="generic_cancel" translatable="false">Annuler</string>
+    <string name="generic_yes" translatable="false">Oui</string>
+    <string name="generic_no" translatable="false">Non</string>
+    <string name="generic_back" translatable="false">Retour</string>
+    <string name="generic_coming_soon" translatable="false">Bientôt disponible.....</string>
+    <string name="action_print" translatable="false">Imprimer</string>
+    <string name="action_sms" translatable="false">SMS</string>
+    <string name="action_home" translatable="false">Domicile</string>
+    <string name="action_settings" translatable="false">Paramètres</string>
+    <string name="generic_warning" translatable="false">Avertissement!</string>
+    <string name="generic_update" translatable="false">Mettre à jour</string>
+    <string name="generic_deleted" translatable="false">Supprimé</string>
+    <string name="prompt_email" translatable="false">Nom d\'utilisateur</string>
+    <string name="prompt_password" translatable="false">Mot de passe</string>
+    <string name="prompt_admin_password" translatable="false">Mot de passe d\'administrateur</string>
+    <string name="action_sign_in" translatable="false">Connexion</string>
+    <string name="action_sign_in_short" translatable="false">S\'identifier</string>
+    <string name="url_invalid" translatable="false">Vérifiez votre URL.</string>
+    <string name="error_invalid_email" translatable="false">Ce nom d\'utilisateur n\'est pas valide</string>
+    <string name="error_invalid_password" translatable="false">Ce mot de passe est trop court</string>
+    <string name="error_incorrect_password" translatable="false">veuillez vérifier le nom d\'utilisateur ou  le mot de passe saisis</string>
+    <string name="error_field_required" translatable="false">Ce champ est requis</string>
+    <string name="error_network" translatable="false">Erreur réseau</string>
+    <string name="error_location_not_selected" translatable="false">Veuillez sélectionner une valeur dans la liste déroulante de l\'emplacement</string>
+    <string name="error_location_not_fetched" translatable="false">Impossible de récupérer les emplacements</string>
+    <string name="permission_rationale" translatable="false">Les autorisations de contacts sont nécessaires pour fournir des courriers électroniques complets.</string>
+    <string name="device_id" translatable="false">identifiant  de l\'appareil:</string>
+    <string name="cant_login_user" translatable="false">Vous ne parvenez pas à vous connecter?</string>
+    <string name="email_link" translatable="false">Veuillez contacter votre administrateur système pour réinitialiser votre mot de passe ou envoyer un e-mail à support@TeleMedicine.io</string>
+    <string name="title_home_screen" translatable="false">Accueil</string>
+    <string name="contact_whatsapp">Veuillez contacter votre administrateur système pour réinitialiser votre mot de passe ou envoyer un e-mail à support@TeleMedicine.io</string>
+    <string name="button_new_pt">Nouveau patient</string>
+    <string name="button_find_pt" translatable="false">Trouver un patient</string>
+    <string name="button_diagnostic_tests" translatable="false">Tests diagnostiques</string>
+    <string name="button_active_pt" translatable="false">Patients actifs</string>
+    <string name="menu_option_sync" translatable="false">Synchroniser les données</string>
+    <string name="menu_option_settings" translatable="false">Paramètres</string>
+    <string name="menu_option_end_of_day" translatable="false">Fin de la journée</string>
+    <string name="menu_option_logout" translatable="false">Se déconnecter</string>
+    <string name="title_activity_identification" translatable="false">Ajouter un nouveau patient</string>
+    <string name="identification_screen_prompt_first_name">Prénom *</string>
+    <string name="identification_screen_prompt_middle_name">Ature Prenom</string>
+    <string name="identification_screen_prompt_last_name">Nom de famille *</string>
+    <string name="identification_screen_prompt_address">Adresse 1</string>
+    <string name="identification_screen_prompt_address2">Adresse Ligne 2</string>
+    <string name="identification_screen_prompt_phone_number">Numéro de téléphone</string>
+    <string name="admin_password_dialog_heading" translatable="false">Entrez le mot de passe administrateur</string>
+    <string name="identification_screen_prompt_gender" translatable="false">Genre *</string>
+    <string name="identification_screen_checkbox_male">Homme</string>
+    <string name="identification_screen_checkbox_female">Femelle</string>
+    <string name="identification_screen_prompt_birthday">Date de naissance*</string>
+    <string name="identification_screen_prompt_age">Âge:</string>
+    <string name="identification_screen_prompt_city">Village / Ville / Ville *</string>
+    <string name="identification_screen_prompt_state">État *</string>
+    <string name="identification_screen_prompt_economic_status" translatable="false">Statut économique</string>
+    <string name="identification_screen_prompt_education" translatable="false">Niveau d\'éducation</string>
+    <string name="identification_screen_prompt_country" translatable="false">Pays *</string>
+    <string name="identification_screen_prompt_postal_code" translatable="false">Code postal</string>
+    <string name="identification_screen_prompt_relationship" translatable="false">Fils / fille / épouse de</string>
+    <string name="identification_screen_prompt_occupation" translatable="false">Occupation</string>
+    <string name="identification_screen_snack_patient_created" translatable="false">Patient créé! Téléchargement vers le serveur.</string>
+    <string name="identification_screen_error_data_fields" translatable="false">Erreur: les champs de données ne sont pas formatés correctement</string>
+    <string name="identification_screen_dialog_age" translatable="false">Veuillez saisir l\'âge en années</string>
+    <string name="identification_screen_dialog_error_dob" translatable="false">La date de naissance est définie après aujourd\'hui</string>
+    <string name="identification_screen_dialog_error_gender" translatable="false">Le genre n\'est pas sélectionné</string>
+    <string name="identification_screen_required_fields" translatable="false">Veuillez saisir les champs obligatoires</string>
+    <string name="identification_screen_error_dob" translatable="false">Entrez une date de naissance valide</string>
+    <string name="identification_screen_error_age" translatable="false">Entrez un âge valide</string>
+    <string name="identification_screen_text_years" translatable="false">années</string>
+    <string name="identification_screen_text_months" translatable="false">mois</string>
+    <string name="title_activity_active_patient" translatable="false">Visites actives</string>
+    <string name="title_activity_get_patient_history" translatable="false">Historique du patient</string>
+    <string name="title_activity_search_patient" translatable="false">Recherchez un patient</string>
+    <string name="title_activity_complaint_select" translatable="false">Sélectionnez Réclamations</string>
+    <string name="title_activity_complaint_questions" translatable="false">Répondre à toutes les questions</string>
+    <string name="title_activity_complaint_node">Sélectionnez Réclamations</string>
+    <string name="complaint_category_selected" translatable="false">Catégories sélectionnées:</string>
+    <string name="complaint_complaint_selected" translatable="false">Réclamations sélectionnées:</string>
+    <string name="complaint_dialog_title">Raison de visite</string>
+    <string name="complaint_required" translatable="false">La plainte doit être sélectionnée!</string>
+    <string name="title_activity_question_node" translatable="false">Question Activite</string>
+    <string name="complaint_change_selected" translatable="false">Modifier</string>
+    <string name="question_answer_all" translatable="false">Êtes-vous sûr d\'avoir répondu à toutes les questions.</string>
+    <string name="question_answer_all_phy_exam" translatable="false">Veuillez répondre à toutes les questions générales de l\'examen.</string>
+    <string name="question_duration_picker" translatable="false">Veuillez saisir la durée</string>
+    <string name="question_text_input" translatable="false">Veuillez saisir du texte</string>
+    <string name="question_date_picker" translatable="false">Veuillez sélectionner la date</string>
+    <string name="question_location_picker" translatable="false">Veuillez sélectionner des emplacements</string>
+    <string name="question_number_picker" translatable="false">Veuillez entrer le numéro</string>
+    <string name="question_area_picker" translatable="false">Veuillez saisir la zone (largeur X longueur)</string>
+    <string name="question_range_picker" translatable="false">Veuillez saisir une plage</string>
+    <string name="question_frequency_picker" translatable="false">Veuillez saisir le nombre de fois</string>
+    <string name="title_activity_vitals" translatable="false">Vitals</string>
+    <string name="table_hw" translatable="false">Mesures du corps</string>
+    <string name="table_height" translatable="false">Hauteur (cm)</string>
+    <string name="table_weight" translatable="false">poids (kg)</string>
+    <string name="table_bmi" translatable="false">IMC</string>
+    <string name="table_pulse" translatable="false">Impulsion (bpm)</string>
+    <string name="table_bp" translatable="false">Signes vitaux</string>
+    <string name="table_bpsys" translatable="false">BP Sys</string>
+    <string name="table_bpdia" translatable="false">BP Dia</string>
+    <string name="table_temp" translatable="false">Température (C)</string>
+    <string name="table_spo2" translatable="false">SpO2 (%)</string>
+    <string name="search_hint" translatable="false">Tapez pour rechercher le patient par nom…</string>
+    <string name="action_search" translatable="false">Rechercher</string>
+    <string name="alert_none_found" translatable="false">Veuillez vérifier le nom d\'utilisateur et le mot de passe saisis</string>
+    <string name="title_activity_patient_history" translatable="false">Antécédents médicaux</string>
+    <string name="title_activity_family_history" translatable="false">Histoire de famille</string>
+    <string name="title_activity_physical_exam" translatable="false">Examen physique</string>
+    <string name="title_activity_patient_summary" translatable="false">Résumé de la visite</string>
+    <string name="visit_summary_temperature" translatable="false">Température (C)</string>
+    <string name="visit_summary_pulseox" translatable="false">SpO2 (%)</string>
+    <string name="visit_summary_hw_on_duty" translatable="false">ASC en service</string>
+    <string name="visit_summary_vitals_heading" translatable="false">Vitals</string>
+    <string name="visit_summary_height_heading" translatable="false">Hauteur (cm)</string>
+    <string name="visit_summary_weight" translatable="false">poids (kg)</string>
+    <string name="visit_summary_bmi" translatable="false">IMC</string>
+    <string name="visit_summary_bp" translatable="false">BP</string>
+    <string name="visit_summary_pulse" translatable="false">Impulsion</string>
+    <string name="visit_summary_previous_reports" translatable="false">Rapports précédents</string>
+    <string name="visit_summary_medical_history">Antécédents médicaux</string>
+    <string name="visit_summary_family_history" translatable="false">Historique familial</string>
+    <string name="visit_summary_on_examination" translatable="false">En examination</string>
+    <string name="visit_summary_complaint" translatable="false">Raison de visite</string>
+    <string name="visit_summary_vitals" translatable="false">Vitals</string>
+    <string name="visit_summary_doctor_details" translatable="false">Détails du médecin</string>
+    <string name="visit_summary_rx" translatable="false">Médicaments prescrits</string>
+    <string name="visit_summary_diagnosis" translatable="false">Diagnostic</string>
+    <string name="visit_summary_advice" translatable="false">Conseil médical</string>
+    <string name="visit_summary_tests_prescribed" translatable="false">Tests / références</string>
+    <string name="visit_summary_additional_comments" translatable="false">Commentaires supplémentaires</string>
+    <string name="visit_summary_heading_name" translatable="false">Nom</string>
+    <string name="visit_summary_heading_id" translatable="false">identifiant</string>
+    <string name="visit_summary_button_download" translatable="false">Télécharger</string>
+    <string name="visit_summary_button_upload" translatable="false">Télécharger</string>
+    <string name="visit_summary_follow_up_date" translatable="false">Date de suivi</string>
+    <string name="visit_summary_follow_up_reminder" translatable="false">Veuillez rappeler au patient sa date de suivi:</string>
+    <string name="visit_summary_upload_reminder" translatable="false">Veuillez d\'abord synchroniser avant d\'essayer de mettre fin à la visite.</string>
+    <string name="title_activity_diagnostic_tests_list" translatable="false">Choisissez un test de diagnostic</string>
+    <string name="wash_hands" translatable="false">N\'oubliez pas de vous laver les mains</string>
+    <string name="header_patient_detail" translatable="false">Information patient</string>
+    <string name="button_history" translatable="false">Historique du patient</string>
+    <string name="title_activity_patient_detail" translatable="false">Détail du patient</string>
+    <string name="header_medical_history" translatable="false">Historique</string>
+    <string name="button_new_visit" translatable="false">Commencer une nouvelle visite</string>
+    <string name="header_previous_visits" translatable="false">Visites précédentes</string>
+    <string name="header_patient_history" translatable="false">Antécédents médicaux</string>
+    <string name="header_family_history" translatable="false">Historique familial</string>
+    <string name="string_no_hist" translatable="false">Pas d\'antécédents de maladie</string>
+    <string name="row_patient_id" translatable="false">ID du patient</string>
+    <string name="row_dob" translatable="false">DOB</string>
+    <string name="row_age" translatable="false">Âge</string>
+    <string name="row_address">Adresse</string>
+    <string name="row_phone_number" translatable="false">Numéro de téléphone</string>
+    <string name="row_open_visit" translatable="false">Cliquez pour ouvrir la visite</string>
+    <string name="title_activity_settings" translatable="false">Paramètres</string>
+    <string name="pref_header_general" translatable="false">Général</string>
+    <string name="pref_title_display_name" translatable="false">Afficher un nom</string>
+    <string name="pref_title_server_url" translatable="false">URL du serveur</string>
+    <string name="pref_header_notifications" translatable="false">Notifications</string>
+    <string name="pref_title_new_message_notifications" translatable="false">Notifications de nouveaux messages</string>
+    <string name="title_activity_setup" translatable="false">Installer</string>
+    <string name="title_activity_camera" translatable="false">Caméra</string>
+    <string name="title_activity_today_patient" translatable="false">Visites d\'aujourd\'hui</string>
+    <string name="title_activity_additional_documents">Documents supplémentaires</string>
+    <string name="title_activity_video_library" translatable="false">Vidéothèque</string>
+    <string name="visit_summary_patient_details" translatable="false">Détails de la visite</string>
+    <string name="setup_internet" translatable="false">Une connexion Internet solide est requise pour la configuration.</string>
+    <string name="generic_manual_entry" translatable="false">Saisie manuelle</string>
+    <string name="generic_erase_redo" translatable="false">Effacer et refaire</string>
+    <string name="visit_summary_edit_vitals" translatable="false">Vous pouvez refaire les signes vitaux à partir de l\'écran des signes vitaux</string>
+    <string name="permission_camera_rationale" translatable="false">L\'autorisation de la caméra est nécessaire pour afficher l\'aperçu de la caméra.</string>
+    <string name="permission_camera_denied" translatable="false">L\'autorisation de la caméra a été refusée. Pensez à l\'octroyer pour accéder à la caméra!</string>
+    <string name="permission_camera_never_askagain" translatable="false">L\'autorisation de la caméra a été refusée avec ne plus jamais demander.</string>
+    <string name="button_allow" translatable="false">Permettre</string>
+    <string name="button_deny" translatable="false">Refuser</string>
+    <string name="button_ok" translatable="false">d\'accord</string>
+    <string name="button_cancel" translatable="false">Annuler</string>
+    <string name="picture_taken" translatable="false">Photo prise</string>
+    <string name="switch_flash" translatable="false">Commutateur de flash</string>
+    <string name="switch_camera" translatable="false">Changer de caméra</string>
+    <string name="flash_auto" translatable="false">Flash automatique</string>
+    <string name="flash_off" translatable="false">Flash désactivé</string>
+    <string name="flash_on" translatable="false">Flash allumé</string>
+    <string name="button_save" translatable="false">Sauvegarder</string>
+    <string name="button_delete" translatable="false">Effacer</string>
+    <string name="camera_dialog_default" translatable="false">Veuillez cliquer sur la photo du document uniquement dans de bonnes conditions d\'éclairage. Si la photo du document n\'est pas claire, veuillez reprendre la photo du document.</string>
+    <string name="offline_credentials_unavailable" translatable="false">La connexion hors ligne n\'est pas disponible.</string>
+    <string name="offline_user_does_not_match" translatable="false">L\'utilisateur ne correspond pas.</string>
+    <string name="offline_authentication_not_possible" translatable="false">Impossible à authentifier.</string>
+    <string name="admin_authentication_not_possible" translatable="false">Impossible à authentifier.</string>
+    <string name="login_location_select" translatable="false">Sélectionnez l\'emplacement</string>
+    <string name="prompt_licensekey" translatable="false">Clé de licence</string>
+    <string name="setup_use_demo_mindmap" translatable="false">Utilisez des protocoles de démonstration</string>
+    <string name="setup_download_mindmap" translatable="false">Télécharger les protocoles</string>
+    <string name="please_wait_progress" translatable="false">S\'il vous plaît, attendez</string>
+    <string name="downloading_protocols" translatable="false">Téléchargement des protocoles</string>
+    <string name="logging_in" translatable="false">Se connecter</string>
+    <string name="error_downloading_protocols" translatable="false">Erreur lors du téléchargement des cartes mentales</string>
+    <string name="sync_stopped" translatable="false">Arrêté</string>
+    <string name="sync_in_progress" translatable="false">En cours</string>
+    <string name="sync_complete" translatable="false">Compléter</string>
+    <string name="id_number" translatable="false">Numéro d\'identification</string>
+    <string name="uploading" translatable="false">Téléchargement</string>
+    <string name="downloading" translatable="false">Téléchargement...</string>
+    <string name="visit" translatable="false">Visite</string>
+    <string name="visit_update" translatable="false">Mettre à jour Les visites</string>
+    <string name="patient">Patient</string>
+    <string name="patient_update" translatable="false">Mise à jour du patient</string>
+    <string name="patient_images" translatable="false">Image du profil du patient</string>
+    <string name="visit_images" translatable="false">Visiter les images</string>
+    <string name="prescription" translatable="false">Prescription</string>
+    <string name="error_no_data" translatable="false">Veuillez d\'abord Syncrhoniser avant d\'essayer de mettre fin à la visite.</string>
+    <string name="error_phone_number" translatable="false">Le numéro de téléphone ne peut pas être vide</string>
+    <string name="action_end_visit" translatable="false">Fin de la visite</string>
+    <string name="error_sms" translatable="false">Échec du SMS, veuillez réessayer plus tard!</string>
+    <string name="question_update_details" translatable="false">Voulez-vous mettre à jour les détails?</string>
+    <string name="hide_text">CACHER</string>
+    <string name="show_text">Afficher</string>
+    <string name="error_admin_password" translatable="false">Mot de passe administrateur incorrect</string>
+    <string name="error_no_file" translatable="false">Aucun fichier dans ce répertoire</string>
+    <string name="error_no_camera" translatable="false">Aucune caméra installée.</string>
+    <string name="error_offline_login" translatable="false">Échec de la connexion hors ligne</string>
+    <string name="success_offline_login" translatable="false">Connexion hors ligne réussie</string>
+    <string name="invalidate_offline_login" translatable="false">Connexion hors ligne invalidée</string>
+    <string name="patient_upload_error" translatable="false">Le patient n\'a pas été téléchargé</string>
+    <string name="patient_not_registered" translatable="false">Patient non enregistré</string>
+    <string name="action_sync_all" translatable="false">Synchroniser les données</string>
+    <string name="not_provided" translatable="false">Non fourni</string>
+    <string name="exit_survey_label" translatable="false">Comment était ton expérience?</string>
+    <string name="exit_survey_prompt" translatable="false">Entrez vos commentaires ici</string>
+    <string name="exit_survey_skip" translatable="false">Passez</string>
+    <string name="exit_survey_submit" translatable="false">Soumettre</string>
+    <string name="exit_survey_toast">Veuillez sélectionner un smiley avant de soumettre</string>
+    <string name="no_network" translatable="false">Connexion Internet non disponible</string>
+    <string name="image_downloading_service_title" translatable="false">Téléchargement</string>
+    <string name="image_downloading_service_message" translatable="false">Téléchargement des image</string>
+    <string name="image_downloading_service_complete_title" translatable="false">Téléchargement des image terminé</string>
+    <string name="image_downloading_service_complete_message" translatable="false">Tous les fichiers image ont été téléchargés</string>
+    <string name="image_downloading_service_process_message" translatable="false">Téléchargé</string>
+    <string name="error_img_unavailable" translatable="false">Image non disponible</string>
+    <string name="error_img_download_failed" translatable="false">Le téléchargement de l\'image a échoué</string>
+    <string name="user_logged_in" translatable="false">Déjà connecté!</string>
+    <string name="user_logged_in_other_device" translatable="false">Déjà connecté, veuillez vous déconnecter d\'un autre appareil.</string>
+    <string name="user_logged_out" translatable="false">Déconnecté du serveur</string>
+    <string name="user_login_check_success" translatable="false">Connexion réussie!</string>
+    <string name="user_login_error" translatable="false">Un autre utilisateur est connecté à cet emplacement. Veuillez contacter l\'administrateur</string>
+    <string name="user_server_unreachable" translatable="false">Appareil hors ligne. Impossible de vérifier le serveur pour la vérification de la connexion</string>
+    <string name="title_activity_privacy_notice" translatable="false">Avis de confidentialité</string>
+    <string name="privacy_toast">veuillez sélectionner une option</string>
+    <string name="temperature_f">Température (F)</string>
+    <string name="sync_now">Synchroniser maintenant</string>
+    <string name="lastsync">lastsync</string>
+    <string name="enter_password">Tapez votre mot de passe</string>
+    <string name="enter_username">Entrez votre nom d\'utilisateur</string>
+    <string name="patient_denies" translatable="false">Le patient nie</string>
+    <string name="patient_reports" translatable="false">Rapports des patients</string>
+    <string name="associated_symptoms">Symptômes associés</string>
+    <string name="enter_server_url">Entrez l\'URL du serveur</string>
+    <string name="invalid_url">URL invalide</string>
+    <string name="years">années</string>
+    <string name="months">mois</string>
+    <string name="please_wait_till_sync_is_completed">Veuillez patienter jusqu\'à ce que la synchronisation soit terminée</string>
+    <string name="patient_name">Nom du patient</string>
+    <string name="son_daughter_wife_of">Fils / fille / épouse de</string>
+    <string name="occupation">Occupation</string>
+    <string name="economic_status">Statut économique</string>
+    <string name="education_level">Niveau d\'éducation</string>
+    <string name="caste">Caste</string>
+    <string name="previous_visits">Visites précédentes</string>
+    <string name="accept">J\'accepte</string>
+    <string name="reject">Rejeter</string>
+    <string name="next">Suivant</string>
+    <string name="which_server_would_you_like_to_connect_to">À quel serveur souhaitez-vous vous connecter?</string>
+    <string name="enter_url">Entrer l\'URL</string>
+    <string name="choose_a_location_to_login">Choisissez un emplacement pour vous connecter</string>
+    <string name="choose_an_option_for_protocols">Choisissez une option pour les protocoles</string>
+    <string name="please_enter_your_username_and_password">Veuillez s\'il vous plaît entrer votre nom d\'utilisateur et votre mot de passe</string>
+    <string name="android_id">Identifiant Android:</string>
+    <string name="respiratory_rate">Fréquence respiratoire</string>
+    <string name="click_to_download_the_images">Cliquez pour télécharger les images</string>
+    <string name="health_worker">Agent de santé</string>
+    <string name="doctor">Détails du médecin</string>
+    <string name="priority">Priorité</string>
+    <string name="server_url">URL du serveur</string>
+    <string name="sync">Synchroniser</string>
+    <string name="update_protocols">Mettre à jour les protocoles</string>
+    <string name="end_all_visit">Terminer toutes les visites</string>
+    <string name="upload_before_end_visit_active">Veuillez télécharger la visite avant d\'essayer de mettre fin à la visite.</string>
+    <string name="active">actif</string>
+    <string name="closed">Fermé</string>
+    <string name="syncInProgress">Synchronisation en cours</string>
+    <string name="please_wait">S\'il vous plaît, attendez...</string>
+    <string name="sync_notif_title">synchroniser</string>
+    <string name="sync_background_completed">syncBackground terminé</string>
+    <string name="sync_not_available">Sync non disponible</string>
+    <string name="please_connect_to_internet">Veuillez vous connecter à une connexion Internet!</string>
+    <string name="image_upload">ImageUpload</string>
+    <string name="image_upload_failed">ImageUpload a échoué</string>
+    <string name="sure_to_exit">Êtes-vous sûr de vouloir quitter?</string>
+    <string name="sure_to_logout">Êtes-vous sûr de vouloir vous déconnecter?</string>
+    <string name="lastsync_normal">Dernière synchronisation</string>
+    <string name="update_patient_identification">Mettre à jour le patient</string>
+    <string name="are_you_want_go_back">Voulez-vous vraiment revenir en arrière?</string>
+    <string name="error">Erreur</string>
+    <string name="patient_data_upload">Téléchargement des données du patient</string>
+    <string name="patient_image_download_notifi">Téléchargement de l\'image du patient</string>
+    <string name="image_download_complete_notifi">s Téléchargement d\'image terminé.</string>
+    <string name="no_prior_visits">Aucune visite préalable.</string>
+    <string name="end_visit_notif">Fin de Visite</string>
+    <string name="visit_ended_notif">Visite terminée</string>
+    <string name="this_question_only_one_answer">Cette question ne peut avoir qu\'une seule réponse.</string>
+    <string name="uploading_to_doctor_notif">Téléchargement chez le médecin.</string>
+    <string name="visit_data_upload">Visitez Data Upload</string>
+    <string name="uploading_visit_data_notif">Téléchargement des données de visite</string>
+    <string name="uploaded_visit_data_notif">Données de visite téléchargées</string>
+    <string name="failed_to_upload">échec du téléversement</string>
+    <string name="upload_completed">Téléversement terminé</string>
+    <string name="check_your_connectivity">Vérifiez votre connectivité</string>
+    <string name="download_from_doctor">Télécharger du médecin</string>
+    <string name="prescription_downloaded">Ordonnance téléchargée</string>
+    <string name="downloading_prescription">Téléchargement de la prescription</string>
+    <string name="visit_data_failed">Échec de la visite des données</string>
+    <string name="patient_data_failed">Échec des données du patient</string>
+    <string name="privacy_notice_title">Avis de confidentialité</string>
+    <string name="no_data_active_patients">Aucun dossier de patient pour cet agent de santé n\'a été trouvé.</string>
+    <string name="syncing_visitDialog">Synchronisation</string>
+    <string name="successfully_synced_notif">Synchronisé avec succès</string>
+    <string name="languages">Langues</string>
+    <string name="current_language">Langue courante</string>
+    <string name="protocols_downloaded_successfully">Les protocoles ont été téléchargés avec succès!</string>
+    <string name="no_protocols_found">Aucun protocole trouvé</string>
+    <string name="unable_to_get_proper_response">Un problème est survenu lors du téléchargement des protocoles, veuillez contacter l\'administrateur système</string>
+    <string name="last_synced">Dernière synchronisation -</string>
+    <string name="day">journée</string>
+    <string name="hour">heure</string>
+    <string name="minute">minute</string>
+    <string name="s">s</string>
+    <string name="ago">depuis</string>
+    <string name="successfully_synced">Synchronisé avec succès</string>
+    <string name="visit_not_uploaded">Visite non téléversée</string>
+    <string name="upload_started">Téléchargement...</string>
+    <string name="visit_uploaded_successfully">Visite téléversée avec succès</string>
+    <string name="visit_uploaded_failed">Sera téléchargé lorsque Internet sera disponible</string>
+    <string name="visitID">ID de visite</string>
+    <string name="end_visit_msg">Voulez-vous vraiment terminer la visite?</string>
+    <string name="prescription_not_downloaded_check_internet">Ordonnance non téléchargée, vérifiez la connexion Internet</string>
+    <string name="privacy_reject_toast">Vous ne pouvez pas enregistrer un patient sans consentement</string>
+    <string name="not_answered">Non répondu</string>
+    <string name="new_update_available">Nouvelle mise à jour disponible</string>
+    <string name="update_app_note">Une nouvelle version est disponible avec de nouvelles fonctionnalités, veuillez mettre à jour l\'application</string>
+    <string name="update">Mettre à jour</string>
+    <string name="what_is_the_reason_for_your_visit">Quelle est la raison de votre visite?</string>
+    <string name="swipe_down_to_return">Balayez vers le bas pour le précédent / vers le haut pour le suivant</string>
+    <string name="swipe_up">Balayez vers le haut pour le prochain</string>
+    <string name="swipe_down">Glissez vers le bas pour le précédent</string>
+    <string name="have_symptom">Avez-vous ce symptôme?</string>
+    <string name="personal_information">Renseignements personnels</string>
+    <string name="address_details">Détails de l\'adresse</string>
+    <string name="txt_others">Autres</string>
+    <string name="do_you_need_help_please_contact_us">As-tu besoin d\'aide? Contactez nous s\'il vous plait!</string>
+    <string name="whatsapp_helpline">Assistance téléphonique WhatsApp</string>
+    <string name="Whatsapp_Help_Cardview">Aider</string>
+    <string name="skip">Passez</string>
+    <string name="start">Démarrer</string>
+    <string name="who_is_this_napplication_for">À qui s\'adresse cette application?</string>
+    <string name="custom_setup">Configuration personnalisée</string>
+    <string name="demo_version">Version de démonstration</string>
+    <string name="active_defaultTag">actif</string>
+    <string name="since_when_have_you_had_this_symptom">Depuis quand avez-vous ce symptôme?</string>
+    <string name="hello_n_n_i_m_ayu_a_digital_health_assistant_let_s_get_started">Bonjour, je suis AFIA, un assistant de santé numérique. Commençons!</string>
+    <string name="i_need_assistance">et j\'ai besoin d\'aide.</string>
+    <string name="hello_n_n_i_m_ayu_a_digital_health_assistant_let_s_get_started_normal_Screen">Bonjour, je suis AFIA, un assistant de santé numérique. Commençons!</string>
+    <string name="hello_my_name_is">Bonjour, je m\'appelle</string>
+    <string name="economic_values_missing">Les valeurs économiques manquent</string>
+    <string name="education_values_missing">Les valeurs d\'éducation sont manquantes</string>
+    <string name="intelehealth_a_telemedicine_platform">TeleMedicine est une application de télémédecine qui met en relation les agents de santé des zones rurales et éloignées avec des médecins éloignés afin qu\'ils puissent fournir des services de santé de haute qualité à leurs patients.</string>
+    <string name="intelehealth_name">TéléMédecine</string>
+    <string name="Ayu_name">AFIA</string>
+    <string name="close_button">Fermer</string>
+    <string name="active_tag_patientDetail">actif</string>
+    <string name="associated_symptoms_patientDetail">Symptômes associés</string>
+    <string name="device_ID">\"Reference de l\'appareil: \"</string>
+    <string name="enter_valid_license_url">Entrez une URL de licence valide</string>
+    <string name="please_enter_url_and_key">Veuillez saisir l\'URL et la clé</string>
+    <string name="please_enter_valid_license_key">Veuillez saisir une clé de licence valide</string>
+    <string name="permission_denied">Permission refusée</string>
+    <string name="reject_permission_results"><! [CDATA [Si vous refusez l'autorisation, vous ne pouvez pas utiliser ce service \ n \ nVeuillez activer les autorisations dans [Paramètre]> [Permission]]]></string>
+    <string name="temperature_C">Température (C):</string>
+    <string name="temperature_F">Température (F):</string>
+    <string name="no_history_family_found">Aucun antécédent de maladie dans la famille fourni.</string>
+    <string name="no_history_patient_illness_found">Aucun antécédent de maladie du patient fourni.</string>
+    <string name="dr_registration_no">\"N ° d\'enregistrement: \"</string>
+    <string name="dr_phone_number">\"Numéro de téléphone: \"</string>
+    <string name="dr_email">\"E-mail: \"</string>
+    <string name="_visit_summary">\"Résumé de la visite\"</string>
+    <string name="patient_id_">\"ID du patient:\"</string>
+    <string name="patient_name_title">\"Nom du patient: \"</string>
+    <string name="patient_DOB">\"Patient DOB:\"</string>
+    <string name="error_non_decimal_no_added">Erreur: nombre non décimal saisi.</string>
+    <string name="download_protocols">Téléchargement de protocoles</string>
+    <string name="mindmap_internect_connection">Pour télécharger des mindmaps, vous avez besoin d\'une connectivité Internet, veuillez allumer votre Internet</string>
+    <string name="days">journées</string>
+    <string name="contact">Contacter</string>
+    <string name="has_a_new_prescription">a une nouvelle prescription</string>
+    <string name="identification_screen_prompt_caste" translatable="false">Caste</string>
 </resources>
