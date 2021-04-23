@@ -87,7 +87,7 @@ public class IntroActivity extends AppCompatActivity {
         context = IntroActivity.this;
         sessionManager = new SessionManager(this);
 
-        BASE_URL = "https://demo.TeleMedicine.org/openmrs/ws/rest/v1/";
+        BASE_URL = "https://hsdo.smartgn.work/openmrs/ws/rest/v1/";
 
         viewPager = (ViewPager) findViewById(R.id.view_pager);
         dotsLayout = (LinearLayout) findViewById(R.id.layoutDots);
@@ -295,7 +295,7 @@ public class IntroActivity extends AppCompatActivity {
                                 mLocations = locationList.getResults();
                                 location = mLocations.get(0);
 
-                                TestSetup("demo.telemedicine.org", "nurse1", "Nurse123", "", location);
+                                TestSetup("hsdo.smartgn.work", "nurse1", "Nurse123", "", location);
 
                             } else {
                                 progress.dismiss();
