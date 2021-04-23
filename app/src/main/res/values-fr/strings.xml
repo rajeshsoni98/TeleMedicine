@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="title_activity_login" translatable="false">TéléMédecine</string>
+    <string name="title_activity_login" translatable="false">AFIA</string>
     <string name="new_patient" translatable="false">Nouveau patient</string>
     <string name="find_patient" translatable="false">Trouver des patients</string>
     <string name="video_library" translatable="false">Vidéothèque</string>
@@ -263,7 +263,7 @@
     <string name="title_activity_privacy_notice" translatable="false">Avis de confidentialité</string>
     <string name="privacy_toast">veuillez sélectionner une option</string>
     <string name="temperature_f">Température (F)</string>
-    <string name="sync_now">Synchroniser maintenant</string>
+    <string name="sync_now">Synchroniser</string>
     <string name="lastsync">lastsync</string>
     <string name="enter_password">Tapez votre mot de passe</string>
     <string name="enter_username">Entrez votre nom d\'utilisateur</string>
@@ -399,7 +399,7 @@
     <string name="please_enter_url_and_key">Veuillez saisir l\'URL et la clé</string>
     <string name="please_enter_valid_license_key">Veuillez saisir une clé de licence valide</string>
     <string name="permission_denied">Permission refusée</string>
-    <string name="reject_permission_results"><![CDATA[Si vous refusez l'autorisation, vous ne pouvez pas utiliser ce service \ n \ nVeuillez activer les autorisations dans [Paramètre]> [Permission]]]></string>
+    <string name="reject_permission_results"><![CDATA[Si vous refusez l\'autorisation, vous ne pouvez pas utiliser ce service \ n \ nVeuillez activer les autorisations dans [Paramètre]> [Permission]]]></string>
     <string name="temperature_C">Température (C):</string>
     <string name="temperature_F">Température (F):</string>
     <string name="no_history_family_found">Aucun antécédent de maladie dans la famille fourni.</string>
@@ -418,4 +418,6 @@
     <string name="contact">Contacter</string>
     <string name="has_a_new_prescription">a une nouvelle prescription</string>
     <string name="identification_screen_prompt_caste" translatable="false">Caste</string>
+    <string name="pref_header_data_sync" translatable="false">Données et synchronisation</string>
+    <string name="cloud_restore_header" translatable="false">Restaurer le nuage de formulaire</string>
 </resources>
