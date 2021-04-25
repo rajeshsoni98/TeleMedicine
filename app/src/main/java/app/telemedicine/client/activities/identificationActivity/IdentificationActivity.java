@@ -483,7 +483,21 @@ public class IdentificationActivity extends AppCompatActivity {
                         else
                             mState.setSelection(stateAdapter.getPosition(state));
 
-                    } else if (country.matches("United States")) {
+                    }
+                    else if (country.matches("Guinée")) {
+                        ArrayAdapter<CharSequence> stateAdapter = ArrayAdapter.createFromResource(IdentificationActivity.this,
+                                R.array.states_Guinée, R.layout.custom_spinner);
+                        // stateAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                        mState.setAdapter(stateAdapter);
+                        // setting state according database when user clicks edit details
+
+                        if (patientID_edit != null)
+                            mState.setSelection(stateAdapter.getPosition(String.valueOf(patient1.getState_province())));
+                        else
+                            mState.setSelection(stateAdapter.getPosition(state));
+
+                    }
+                    else if (country.matches("United States")) {
                         ArrayAdapter<CharSequence> stateAdapter = ArrayAdapter.createFromResource(IdentificationActivity.this,
                                 R.array.states_us, R.layout.custom_spinner);
                         // stateAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

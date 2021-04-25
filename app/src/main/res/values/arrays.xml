@@ -32,9 +32,7 @@
     </string-array>
     <string-array name="countries">
         <item>Select Country</item>
-        <item>India</item>
-        <item>United States</item>
-        <item>Philippines</item>
+        <item>Guinée</item>
     </string-array>
 
     <string-array name="education_or">
@@ -89,6 +87,14 @@
         <item>Select</item>
         <item>APL</item>
         <item>BPL</item>
+    </string-array>
+
+    <string-array name="states_Guinée">
+        <item>Select State</item>
+        <item>Mamou</item>
+        <item>Dalaba</item>
+        <item>Pita</item>
+        <item>Others</item>
     </string-array>
 
     <string-array name="states_india">
