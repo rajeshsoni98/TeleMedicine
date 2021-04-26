@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Intelehealth</string>
+    <string name="app_name">AFIA</string>
     <string name="generic_the_flipping_word_next">ପରବତ୍ତର୍ତ୍ତୀ</string>
     <string name="button_ok">ଓକେ</string>
     <string name="action_end_visit">ମାତ୍ରା ସମାପ୍ତି</string>
@@ -168,7 +168,7 @@
     <string name="title_activity_family_history">ପରିବାର ଇତିହାସ</string>
     <string name="title_activity_get_patient_history">ରୋଗୀ ଇତିିହାସ</string>
     <string name="title_activity_identification">ନୂତନ ରୋଗୀମାନଙ୍କୁ ଯୋଡ଼ିବା</string>
-    <string name="title_activity_login">ବୃଦ୍ଧି ସମ୍ବନ୍ଧୀୟ ସ୍ବାସ୍ଥ୍ୟ</string>
+    <string name="title_activity_login">AFIA</string>
     <string name="title_activity_patient_detail">ରୋଗୀ ବିବରଣୀ</string>
     <string name="title_activity_patient_history">ତୀତ ପୁରୁଣା ଚିକିସତ୍ା ଇଚ୍ଛିହାସ</string>
     <string name="title_activity_patient_summary">ଯାତ୍ରା ସାରାଂଶ</string>
@@ -365,8 +365,8 @@
     <string name="who_is_this_napplication_for">ଏହିଆପିଲସକଶନ୍ କାହା ପାଇଁ?</string>
     <string name="test_2_vibha_onplus_6t_10fke_7">Test 2 Vibha onplus 6T, 10FKE-7</string>
     <string name="age_11_years_5_months">Age: 11 years, 5 months</string>
-    <string name="hello_n_n_i_m_ayu_a_digital_health_assistant_let_s_get_started">Hello\n\n I’m Ayu, a digital health assistant. Let’s get started!</string>
-    <string name="hello_n_n_i_m_ayu_a_digital_health_assistant_let_s_get_started_normal_Screen">Hello\n\n I’m Ayu, a digital health assistant. Let’s get started!</string>
+    <string name="hello_n_n_i_m_ayu_a_digital_health_assistant_let_s_get_started">Hello\n\n I’m AFIA, a digital health assistant. Let’s get started!</string>
+    <string name="hello_n_n_i_m_ayu_a_digital_health_assistant_let_s_get_started_normal_Screen">Hello\n\n I’m AFIA, a digital health assistant. Let’s get started!</string>
     <string name="Ayu_name">ଆୟୁ</string>
     <string name="active_tag_patientDetail">" ସକ୍ରିୟ"</string>
     <string name="associated_symptoms_patientDetail">Associated symptoms</string>
