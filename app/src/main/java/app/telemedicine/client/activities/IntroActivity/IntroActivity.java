@@ -222,14 +222,14 @@ public class IntroActivity extends AppCompatActivity {
             //Highlighting Text
             String introOne = getString(R.string.intelehealth_a_telemedicine_platform);
             String textToHighlightOne = getString(R.string.intelehealth_name);
-            String newString = introOne.replaceAll(textToHighlightOne, "<font color='blue'>" + textToHighlightOne + "</font>");
+            String newString = introOne.replaceAll(textToHighlightOne, "<font color='darkred'>" + textToHighlightOne + "</font>");
             tvIntroOne.setText(Html.fromHtml(newString));
 
             if (position == 1) {
                 String two = getString(R.string.hello_n_n_i_m_ayu_a_digital_health_assistant_let_s_get_started);
                 String textHighlight = getString(R.string.Ayu_name);
                 String newhighlight = two.replaceAll(textHighlight,
-                        "<font color='blue'>" + textHighlight + "</font>")
+                        "<font color='darkred'>" + textHighlight + "</font>")
                         .replaceAll("\n", "<br>");
                 tvIntroTwo.setText(Html.fromHtml(newhighlight));
 
