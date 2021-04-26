@@ -19,7 +19,7 @@
     <string name="generic_coming_soon" translatable="false">Bientôt disponible.....</string>
     <string name="action_print" translatable="false">Imprimer</string>
     <string name="action_sms" translatable="false">SMS</string>
-    <string name="action_home" translatable="false">Domicile</string>
+    <string name="action_home" translatable="false">Accueil</string>
     <string name="action_settings" translatable="false">Paramètres</string>
     <string name="generic_warning" translatable="false">Avertissement!</string>
     <string name="generic_update" translatable="false">Mettre à jour</string>
