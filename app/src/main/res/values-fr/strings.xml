@@ -146,7 +146,7 @@
     <string name="visit_summary_heading_name" translatable="false">Nom</string>
     <string name="visit_summary_heading_id" translatable="false">identifiant</string>
     <string name="visit_summary_button_download" translatable="false">Télécharger</string>
-    <string name="visit_summary_button_upload" translatable="false">Télécharger</string>
+    <string name="visit_summary_button_upload" translatable="false">Envoyez</string>
     <string name="visit_summary_follow_up_date" translatable="false">Date de suivi</string>
     <string name="visit_summary_follow_up_reminder" translatable="false">Veuillez rappeler au patient sa date de suivi:</string>
     <string name="visit_summary_upload_reminder" translatable="false">Veuillez d\'abord synchroniser avant d\'essayer de mettre fin à la visite.</string>
