@@ -236,11 +236,12 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void cant_log() {
-        final SpannableString span_string = new SpannableString(getApplicationContext().getText(R.string.email_link));
+        final SpannableString span_string = new SpannableString
+                (getApplicationContext().getResources().getText(R.string.email_link));
         Linkify.addLinks(span_string, Linkify.EMAIL_ADDRESSES);
 
       MaterialAlertDialogBuilder builder =   new MaterialAlertDialogBuilder(this)
-                .setMessage(getApplicationContext().getText(R.string.contact_whatsapp))
+                .setMessage(getResources().getString(R.string.contact_whatsapp))
                 .setNegativeButton(R.string.contact, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -255,7 +256,7 @@ public class LoginActivity extends AppCompatActivity {
 //                        startActivity(Intent.createChooser(intent, "Send Email"));
 //                        //add email function here !
 
-                        String phoneNumberWithCountryCode = "+917005308163";
+                        String phoneNumberWithCountryCode = "+919763264138";
                         String message =
                                 getString(R.string.hello_my_name_is) + sessionManager.getChwname() +
                                         /*" from " + sessionManager.getState() + */getString(R.string.i_need_assistance);
