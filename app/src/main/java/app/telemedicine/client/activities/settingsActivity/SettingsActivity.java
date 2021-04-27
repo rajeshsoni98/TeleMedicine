@@ -426,8 +426,6 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
 
 
             bindPreferenceSummaryToValue(findPreference("hindiLang"));
-            // bindPreferenceSummaryToValue(findPreference("bengaliLang"));
-            //  bindPreferenceSummaryToValue(findPreference("OriyaLang"));
 
             lang_prefer = findPreference("hindiLang");
             lang_prefer.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {

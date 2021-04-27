@@ -2,17 +2,15 @@
 
 
     <string-array name="language_names">
+        <item>français</item>
         <item>English</item>
         <item>Odiya</item>
-        <item>français</item>
-<!--        <item>Cebuano</item>-->
     </string-array>
 
     <string-array name="language_values">
+        <item>fr</item>
         <item>en</item>
         <item>or</item>
-        <item>fr</item>
-<!--        <item>cb</item>-->
     </string-array>
 
 

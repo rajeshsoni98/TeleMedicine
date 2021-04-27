@@ -128,6 +128,14 @@ public class HomeActivity extends AppCompatActivity {
             config.locale = locale;
             getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
         }
+        else {
+            Locale locale = new Locale("fr");
+            Locale.setDefault(locale);
+            Configuration config = new Configuration();
+            config.locale = locale;
+            getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+        }
+
         setTitle(R.string.title_activity_login);
         context = HomeActivity.this;
         customProgressDialog = new CustomProgressDialog(context);
