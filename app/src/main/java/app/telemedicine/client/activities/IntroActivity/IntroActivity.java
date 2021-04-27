@@ -158,10 +158,6 @@ public class IntroActivity extends AppCompatActivity {
 
     private void launchHomeScreen() {
 
-//        Intent intent = new Intent(context, LoginActivity.class);
-//        startActivity(intent);
-//        finish();
-
     }
 
     //  viewpager change listener
@@ -174,12 +170,12 @@ public class IntroActivity extends AppCompatActivity {
             // changing the next button text 'NEXT' / 'GOT IT'
             if (position == layouts.length - 1) {
                 // last page. make button text to GOT IT
-                btnNext.setText(getString(R.string.start));
+                btnNext.setText("Démarrer");
                 btnNext.setVisibility(View.GONE);
                 btnSkip.setVisibility(View.GONE);
             } else {
                 // still pages are left
-                btnNext.setText(getString(R.string.next));
+                btnNext.setText("Suivant");
                 btnNext.setVisibility(View.VISIBLE);
                 btnSkip.setVisibility(View.GONE);
             }
@@ -220,14 +216,14 @@ public class IntroActivity extends AppCompatActivity {
             button_custom_visit = findViewById(R.id.button_custom_visit);
 
             //Highlighting Text
-            String introOne = getString(R.string.intelehealth_a_telemedicine_platform);
-            String textToHighlightOne = getString(R.string.intelehealth_name);
+            String introOne = "AFIA est une application de télémédecine qui met en relation les agents de santé des zones rurales et éloignées avec des médecins éloignés afin qu\\'ils puissent fournir des services de santé de haute qualité à leurs patients.";
+            String textToHighlightOne = "AFIA";
             String newString = introOne.replaceAll(textToHighlightOne, "<font color='red'>" + textToHighlightOne + "</font>");
             tvIntroOne.setText(Html.fromHtml(newString));
 
             if (position == 1) {
-                String two = getString(R.string.hello_n_n_i_m_ayu_a_digital_health_assistant_let_s_get_started);
-                String textHighlight = getString(R.string.Ayu_name);
+                String two = "AFIA est une application de télémédecine qui met en relation les agents de santé des zones rurales et éloignées avec des médecins éloignés afin qu\\'ils puissent fournir des services de santé de haute qualité à leurs patients.";
+                String textHighlight = "AFIA";
                 String newhighlight = two.replaceAll(textHighlight,
                         "<font color='red'>" + textHighlight + "</font>")
                         .replaceAll("\n", "<br>");
@@ -238,8 +234,8 @@ public class IntroActivity extends AppCompatActivity {
                     public void onClick(View view) {
 
                         progress = new ProgressDialog(IntroActivity.this, R.style.AlertDialogStyle);
-                        progress.setTitle(getString(R.string.please_wait_progress));
-                        progress.setMessage(getString(R.string.logging_in));
+                        progress.setTitle("S\\'il vous plaît, attendez");
+                        progress.setMessage("Se connecter");
                         progress.show();
                         getLocationFromServer(BASE_URL);
 
@@ -299,14 +295,14 @@ public class IntroActivity extends AppCompatActivity {
 
                             } else {
                                 progress.dismiss();
-                                Toast.makeText(IntroActivity.this, getString(R.string.error_location_not_fetched), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(IntroActivity.this, "Impossible de récupérer les emplacements", Toast.LENGTH_SHORT).show();
                             }
                         }
 
                         @Override
                         public void onError(Throwable e) {
                             progress.dismiss();
-                            Toast.makeText(IntroActivity.this, getString(R.string.error_location_not_fetched), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(IntroActivity.this, "Impossible de récupérer les emplacements", Toast.LENGTH_SHORT).show();
                         }
 
                         @Override
@@ -460,7 +456,7 @@ public class IntroActivity extends AppCompatActivity {
                 Logger.logD(TAG, "Login Failure" + e.getMessage());
                 progress.dismiss();
                 DialogUtils dialogUtils = new DialogUtils();
-                dialogUtils.showerrorDialog(IntroActivity.this, "Error Login", getString(R.string.error_incorrect_password), "ok");
+                dialogUtils.showerrorDialog(IntroActivity.this, "Error Login", "veuillez vérifier le nom d\\'utilisateur ou  le mot de passe saisis", "ok");
             }
 
             @Override

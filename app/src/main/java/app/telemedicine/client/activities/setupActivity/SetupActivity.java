@@ -168,7 +168,7 @@ public class SetupActivity extends AppCompatActivity {
         });
 
         mAndroidIdTextView = findViewById(R.id.textView_Aid);
-        String deviceID = "Device Id: " + IntelehealthApplication.getAndroidId();
+        String deviceID = "Reference de l'appareil: " + IntelehealthApplication.getAndroidId();
         mAndroidIdTextView.setText(deviceID);
 
         submitButton.setOnClickListener(new View.OnClickListener() {
@@ -181,7 +181,9 @@ public class SetupActivity extends AppCompatActivity {
             }
         });
         DialogUtils dialogUtils = new DialogUtils();
-        dialogUtils.showOkDialog(this, getString(R.string.generic_warning), getString(R.string.setup_internet), getString(R.string.generic_ok));
+        dialogUtils.showOkDialog(this, "Avertissement!",
+                "Une connexion Internet solide est requise pour la configuration.",
+                        "d'accord");
 
         mUrlField.addTextChangedListener(new TextWatcher() {
             @Override
@@ -216,7 +218,7 @@ public class SetupActivity extends AppCompatActivity {
                             if (URLUtil.isValidUrl(BASE_URL) && !isLocationFetched)
                                 getLocationFromServer(BASE_URL);
                             else
-                                Toast.makeText(SetupActivity.this, getString(R.string.url_invalid), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(SetupActivity.this, "Vérifiez votre URL.", Toast.LENGTH_SHORT).show();
                         }
                     }
                 }
@@ -254,24 +256,24 @@ public class SetupActivity extends AppCompatActivity {
 
         // Check for a valid password, if the user entered one.
         if (!TextUtils.isEmpty(password) && !isPasswordValid(password)) {
-            mPasswordView.setError(getString(R.string.error_invalid_password));
+            mPasswordView.setError("Ce mot de passe est trop court");
             focusView = mPasswordView;
             cancel = true;
         }
 
         if (!TextUtils.isEmpty(admin_password) && !isPasswordValid(admin_password)) {
-            mAdminPasswordView.setError(getString(R.string.error_invalid_password));
+            mAdminPasswordView.setError("Ce mot de passe est trop court");
             focusView = mAdminPasswordView;
             cancel = true;
         }
 
         // Check for a valid email address.
         if (TextUtils.isEmpty(email)) {
-            mEmailView.setError(getString(R.string.error_field_required));
+            mEmailView.setError("Ce champ est requis");
             focusView = mEmailView;
             cancel = true;
         } else if (!isEmailValid(email)) {
-            mEmailView.setError(getString(R.string.error_invalid_email));
+            mEmailView.setError("Ce nom d\\'utilisateur n\\'est pas valide");
             focusView = mEmailView;
 
         }
@@ -279,7 +281,7 @@ public class SetupActivity extends AppCompatActivity {
 
         if (mDropdownLocation.getSelectedItemPosition() <= 0) {
             cancel = true;
-            Toast.makeText(SetupActivity.this, getString(R.string.error_location_not_selected), Toast.LENGTH_LONG);
+            Toast.makeText(SetupActivity.this, "Veuillez sélectionner une valeur dans la liste déroulante de l\\'emplacement", Toast.LENGTH_LONG);
         } else {
             location = mLocations.get(mDropdownLocation.getSelectedItemPosition() - 1);
         }
@@ -306,7 +308,7 @@ public class SetupActivity extends AppCompatActivity {
 
 // instantiate it within the onCreate method
         mProgressDialog = new ProgressDialog(SetupActivity.this);
-        mProgressDialog.setMessage(getString(R.string.download_protocols));
+        mProgressDialog.setMessage("Téléchargement de protocoles");
         mProgressDialog.setIndeterminate(true);
         mProgressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
         mProgressDialog.setCancelable(false);
@@ -347,14 +349,14 @@ public class SetupActivity extends AppCompatActivity {
                                 isLocationFetched = true;
                             } else {
                                 isLocationFetched = false;
-                                Toast.makeText(SetupActivity.this, getString(R.string.error_location_not_fetched), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(SetupActivity.this, "Impossible de récupérer les emplacements", Toast.LENGTH_SHORT).show();
                             }
                         }
 
                         @Override
                         public void onError(Throwable e) {
                             isLocationFetched = false;
-                            Toast.makeText(SetupActivity.this, getString(R.string.error_location_not_fetched), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SetupActivity.this, "Impossible de récupérer les emplacements", Toast.LENGTH_SHORT).show();
 
                         }
 
@@ -365,7 +367,7 @@ public class SetupActivity extends AppCompatActivity {
                     });
         } catch (IllegalArgumentException e) {
             FirebaseCrashlytics.getInstance().recordException(e);
-            mUrlField.setError(getString(R.string.url_invalid));
+            mUrlField.setError("Vérifiez votre URL.");
         }
 
     }
@@ -380,7 +382,7 @@ public class SetupActivity extends AppCompatActivity {
      */
     private List<String> getLocationStringList(List<Location> locationList) {
         List<String> list = new ArrayList<String>();
-        list.add(getString(R.string.login_location_select));
+        list.add("Sélectionnez l\\'emplacement");
         for (int i = 0; i < locationList.size(); i++) {
             list.add(locationList.get(i).getDisplay());
         }
@@ -407,22 +409,24 @@ public class SetupActivity extends AppCompatActivity {
                         View promptsView = li.inflate(R.layout.dialog_mindmap_cred, null);
 
 
-                        dialog.setTitle(getString(R.string.enter_license_key))
+                        dialog.setTitle("Entrez la clé de licence")
                                 .setView(promptsView)
 
-                                .setPositiveButton(getString(R.string.button_ok), new DialogInterface.OnClickListener() {
+                                .setPositiveButton("d\\'accord", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         Dialog d = (Dialog) dialog;
 
                                         EditText text = d.findViewById(R.id.licensekey);
                                         EditText url = d.findViewById(R.id.licenseurl);
-                                        if (text.getText().toString().isEmpty() && text.getText() == null || url.getText().toString().isEmpty() && url.getText() == null) {
+                                        if (text.getText().toString().isEmpty() && text.getText() == null ||
+                                                url.getText().toString().isEmpty() && url.getText() == null) {
                                             text.setFocusable(true);
-                                            text.setError(getResources().getString(R.string.enter_license_key));
+                                            text.setError("Entrez la clé de licence");
                                         }
 
-                                        if (sessionManager.getLicenseKey() != null && sessionManager.getLicenseKey().equalsIgnoreCase("https://mindmaps.TeleMedicine.io:4040")) {
+                                        if (sessionManager.getLicenseKey() != null && sessionManager.getLicenseKey()
+                                                .equalsIgnoreCase("https://mindmaps.TeleMedicine.io:4040")) {
                                             text.setText(sessionManager.getLicenseKey());
                                             url.setText(sessionManager.getMindMapServerUrl());
                                         }
@@ -436,17 +440,17 @@ public class SetupActivity extends AppCompatActivity {
                                                     licenseUrl = url.getText().toString().trim();
 
                                                     if (licenseUrl.isEmpty()) {
-                                                        url.setError(getResources().getString(R.string.enter_server_url));
+                                                        url.setError("Entrez l\\'URL du serveur");
                                                         url.requestFocus();
                                                         return;
                                                     }
                                                     if (licenseUrl.contains(":")) {
-                                                        url.setError(getResources().getString(R.string.invalid_url));
+                                                        url.setError("URL invalide");
                                                         url.requestFocus();
                                                         return;
                                                     }
                                                     if (key.isEmpty()) {
-                                                        text.setError(getResources().getString(R.string.enter_license_key));
+                                                        text.setError("Entrez la clé de licence");
                                                         text.requestFocus();
                                                         return;
                                                     }
@@ -454,36 +458,26 @@ public class SetupActivity extends AppCompatActivity {
                                                     sessionManager.setMindMapServerUrl(licenseUrl);
                                                     //Toast.makeText(SetupActivity.this, "" + key, Toast.LENGTH_SHORT).show();
                                                     if (keyVerified(key)) {
-                                                        // create a shared pref to store the key
 
-                                                        // SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("pref",MODE_PRIVATE);
-
-                                                        //DOWNLOAD MIND MAP FILE LIST
-                                                        //upnew getJSONFile().execute(null, "AllFiles", "TRUE");
-
-                                                        // UpdateProtocolsTask updateProtocolsTask = new UpdateProtocolsTask(SetupActivity.this);
-                                                        // updateProtocolsTask.execute(null, "AllFiles", "TRUE");
-//                                        DownloadProtocolsTask downloadProtocolsTask = new DownloadProtocolsTask(SetupActivity.this);
-//                                        downloadProtocolsTask.execute(key);
                                                         getMindmapDownloadURL("https://" + licenseUrl + ":3004/");
 
                                                     }
                                                 } else {
-                                                    Toast.makeText(SetupActivity.this, getString(R.string.url_invalid), Toast.LENGTH_SHORT).show();
+                                                    Toast.makeText(SetupActivity.this, "Vérifiez votre URL.", Toast.LENGTH_SHORT).show();
 
                                                 }
                                             } else {
                                                 //invalid url || invalid url and key.
-                                                Toast.makeText(SetupActivity.this, "Enter valid License Url", Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(SetupActivity.this, "Entrez une URL de licence valide", Toast.LENGTH_SHORT).show();
                                             }
                                         } else {
-                                            Toast.makeText(SetupActivity.this, "Please enter URL and Key", Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(SetupActivity.this, "Veuillez saisir l'URL et la clé", Toast.LENGTH_SHORT).show();
                                         }
 
                                     }
                                 })
 
-                                .setNegativeButton(getString(R.string.button_cancel), new DialogInterface.OnClickListener() {
+                                .setNegativeButton("Annuler", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         dialog.dismiss();
@@ -512,7 +506,7 @@ public class SetupActivity extends AppCompatActivity {
                     }
                 } else {
                     ((RadioButton) v).setChecked(false);
-                    Toast.makeText(context, getString(R.string.mindmap_internect_connection), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "Pour télécharger des mindmaps, vous avez besoin d\\'une connectivité Internet, veuillez allumer votre Internet", Toast.LENGTH_SHORT).show();
                 }
                 break;
         }
@@ -539,8 +533,8 @@ public class SetupActivity extends AppCompatActivity {
 
         progress = new ProgressDialog(SetupActivity.this, R.style.AlertDialogStyle);
         ;//SetupActivity.this);
-        progress.setTitle(getString(R.string.please_wait_progress));
-        progress.setMessage(getString(R.string.logging_in));
+        progress.setTitle("S\\'il vous plaît, attendez");
+        progress.setMessage("Se connecter");
         progress.show();
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
@@ -562,7 +556,8 @@ public class SetupActivity extends AppCompatActivity {
                 UrlModifiers urlModifiers = new UrlModifiers();
                 String url = urlModifiers.loginUrlProvider(CLEAN_URL, loginModel.getUser().getUuid());
                 if (authencated) {
-                    Observable<LoginProviderModel> loginProviderModelObservable = AppConstants.apiInterface.LOGIN_PROVIDER_MODEL_OBSERVABLE(url, "Basic " + encoded);
+                    Observable<LoginProviderModel> loginProviderModelObservable = AppConstants.apiInterface.LOGIN_PROVIDER_MODEL_OBSERVABLE
+                            (url, "Basic " + encoded);
                     loginProviderModelObservable
                             .subscribeOn(Schedulers.io())
                             .observeOn(AndroidSchedulers.mainThread())
@@ -607,9 +602,6 @@ public class SetupActivity extends AppCompatActivity {
 
                                             //String random_salt = stringEncryption.getRandomSaltString();
                                             Log.d("salt", "salt: " + random_salt);
-                                            //Salt_Getter_Setter salt_getter_setter = new Salt_Getter_Setter();
-                                            //salt_getter_setter.setSalt(random`_salt);
-
 
                                             String hash_password = null;
                                             try {
@@ -645,7 +637,8 @@ public class SetupActivity extends AppCompatActivity {
                                                     startActivity(intent);
                                                     finish();
                                                 } else {
-                                                    Toast.makeText(SetupActivity.this, R.string.please_enter_valid_license_key, Toast.LENGTH_LONG).show();
+                                                    Toast.makeText(SetupActivity.this,"Veuillez saisir une clé de licence valide",
+                                                            Toast.LENGTH_LONG).show();
                                                 }
                                             } else {
                                                 sessionManager.setTriggerNoti("no");
@@ -677,7 +670,8 @@ public class SetupActivity extends AppCompatActivity {
                 Logger.logD(TAG, "Login Failure" + e.getMessage());
                 progress.dismiss();
                 DialogUtils dialogUtils = new DialogUtils();
-                dialogUtils.showerrorDialog(SetupActivity.this, "Error Login", getString(R.string.error_incorrect_password), "ok");
+                dialogUtils.showerrorDialog(SetupActivity.this,
+                        "Erreur de connexion", "veuillez vérifier le nom d\\'utilisateur ou  le mot de passe saisis", "d'accord");
                 mEmailView.requestFocus();
                 mPasswordView.requestFocus();
             }
@@ -743,7 +737,7 @@ public class SetupActivity extends AppCompatActivity {
 
                             } else {
 //                                Toast.makeText(SetupActivity.this, res.getMessage(), Toast.LENGTH_LONG).show();
-                                Toast.makeText(SetupActivity.this, getResources().getString(R.string.no_protocols_found), Toast.LENGTH_LONG).show();
+                                Toast.makeText(SetupActivity.this, "Aucun protocole trouvé", Toast.LENGTH_LONG).show();
                             }
                         }
 
@@ -751,7 +745,7 @@ public class SetupActivity extends AppCompatActivity {
                         public void onError(Throwable e) {
                             customProgressDialog.dismiss();
                             Log.e("MindMapURL", " " + e);
-                            Toast.makeText(SetupActivity.this, getResources().getString(R.string.unable_to_get_proper_response), Toast.LENGTH_LONG).show();
+                            Toast.makeText(SetupActivity.this, "Un problème est survenu lors du téléchargement des protocoles, veuillez contacter l\\'administrateur système", Toast.LENGTH_LONG).show();
                         }
 
                         @Override

@@ -62,7 +62,7 @@
                                 android:layout_height="wrap_content"
                                 android:ems="10"
                                 android:includeFontPadding="false"
-                                android:text="@string/which_server_would_you_like_to_connect_to"
+                                android:text="À quel serveur souhaitez-vous vous connecter?"
                                 android:textSize="16sp"
                                 android:fontFamily="@font/lato_bold"/>
 
@@ -76,7 +76,7 @@
                                     android:id="@+id/editText_URL"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:hint="@string/enter_url"
+                                    android:hint="Entrer l\'URL"
                                     android:textSize="14sp"
                                     android:fontFamily="@font/lato_regular"
                                     android:inputType="textUri" />
@@ -92,7 +92,7 @@
                                 android:ems="10"
                                 android:includeFontPadding="false"
                                 android:textSize="16sp"
-                                android:text="@string/choose_a_location_to_login"
+                                android:text="Choisissez un emplacement pour vous connecter"
                                android:fontFamily="@font/lato_bold" />
 
                             <com.google.android.material.textfield.TextInputLayout
@@ -134,7 +134,7 @@
                                 android:textSize="16sp"
                                 android:includeFontPadding="false"
                                 android:fontFamily="@font/lato_bold"
-                                android:text="@string/choose_an_option_for_protocols"
+                                android:text="Choisissez une option pour les protocoles"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
                             <Space
@@ -151,7 +151,7 @@
                                 android:fontFamily="@font/lato_regular"
                                 android:onClick="onRadioClick"
                                 android:textAppearance="@style/RobotoTextViewStyle"
-                                android:text="@string/setup_use_demo_mindmap" />
+                                android:text="Utilisez des protocoles de démonstration" />
 
 
 
@@ -164,7 +164,7 @@
                                 android:includeFontPadding="false"
                                 android:fontFamily="@font/lato_regular"
                                 android:textAppearance="@style/RobotoTextViewStyle"
-                                android:text="@string/setup_download_mindmap" />
+                                android:text="Télécharger les protocoles" />
 
                         </LinearLayout>
 
@@ -194,7 +194,7 @@
                         android:ems="10"
                         android:includeFontPadding="false"
                         android:textSize="16sp"
-                        android:text="@string/please_enter_your_username_and_password"
+                        android:text="Veuillez s\'il vous plaît entrer votre nom d\'utilisateur et votre mot de passe"
                         android:fontFamily="@font/lato_bold" />
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -205,7 +205,7 @@
                             android:id="@+id/email"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="@string/prompt_email"
+                            android:hint="Nom d\'utilisateur"
                             android:imeOptions="actionNext"
                             android:inputType="textEmailAddress"
                             android:maxLines="1"
@@ -223,7 +223,7 @@
                             android:id="@+id/password"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="@string/prompt_password"
+                            android:hint="Mot de passe"
                             android:imeActionId="@+id/admin_password"
                             android:imeOptions="actionNext"
                             android:inputType="textPassword"
@@ -242,13 +242,14 @@
                             android:id="@id/admin_password"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="@string/prompt_admin_password"
+                            android:hint="Mot de passe d\'administrateur"
                             android:imeActionLabel="@string/action_sign_in_short"
                             android:imeOptions="actionUnspecified"
                             android:inputType="textPassword"
                             android:maxLines="1"
                             android:singleLine="true"
                             android:textSize="14sp"
+                            android:visibility="gone"
                             android:fontFamily="@font/lato_regular"/>
 
                     </com.google.android.material.textfield.TextInputLayout>
@@ -270,7 +271,7 @@
                         android:layout_marginTop="15dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:text="@string/action_sign_in"
+                        android:text="Connexion"
                         android:fontFamily="@font/lato_bold"
                         android:background="@color/colorPrimary"
                         android:textColor="@color/white"
@@ -293,7 +294,7 @@
                         android:gravity="end"
                         android:fontFamily="@font/lato_regular"
                         android:ems="10"
-                        android:text="@string/android_id"
+                        tools:text="@string/android_id"
                         android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
                 </LinearLayout>

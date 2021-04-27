@@ -11,7 +11,8 @@
     <string name="hint_required" translatable="false">Obligatoire</string>
     <string name="hint_optional" translatable="false">Optionnel</string>
     <string name="tag_optional" translatable="false">optionnel</string>
-    <string name="generic_ok" translatable="false">OK</string>
+    <string name="generic_ok" translatable="false">
+d'accord</string>
     <string name="generic_cancel" translatable="false">Annuler</string>
     <string name="generic_yes" translatable="false">Oui</string>
     <string name="generic_no" translatable="false">Non</string>
@@ -420,4 +421,5 @@
     <string name="identification_screen_prompt_caste" translatable="false">Caste</string>
     <string name="pref_header_data_sync" translatable="false">Données et synchronisation</string>
     <string name="cloud_restore_header" translatable="false">Restaurer le nuage de formulaire</string>
+    <string name="enter_license_key"><b>Entrez la clé de licence</b></string>
 </resources>
