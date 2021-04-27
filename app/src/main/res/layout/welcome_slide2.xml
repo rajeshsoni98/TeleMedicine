@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:paddingTop="120dp">
+    android:paddingTop="100dp">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -26,14 +26,14 @@
         android:id="@+id/tv_intro_two"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="AFIA est une application de télémédecine qui met en relation les agents de santé des zones rurales et éloignées avec des médecins éloignés afin qu\'ils puissent fournir des services de santé de haute qualité à leurs patients."
+        android:text="AFIA est une application de télémédecine qui met en relation les agents de santé des zones rurales et éloignées avec des médecins éloignés afin qu'ils puissent fournir des services de santé de haute qualité à leurs patients."
         android:layout_below="@id/ayu_logo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="48dp"
         android:fontFamily="@font/lato_regular"
         android:textSize="18sp"
-        android:layout_marginStart="44dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
         android:lineSpacingExtra="2sp"
         android:gravity="center_horizontal|top" />
 
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
             android:elevation="5dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/lato_bold"
             android:text="Configuration personnalisée"
             android:textColor="#000000"

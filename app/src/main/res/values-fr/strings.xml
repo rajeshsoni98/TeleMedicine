@@ -11,8 +11,7 @@
     <string name="hint_required" translatable="false">Obligatoire</string>
     <string name="hint_optional" translatable="false">Optionnel</string>
     <string name="tag_optional" translatable="false">optionnel</string>
-    <string name="generic_ok" translatable="false">
-d'accord</string>
+    <string name="generic_ok" translatable="false">d\'accord</string>
     <string name="generic_cancel" translatable="false">Annuler</string>
     <string name="generic_yes" translatable="false">Oui</string>
     <string name="generic_no" translatable="false">Non</string>

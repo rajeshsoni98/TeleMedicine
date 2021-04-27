@@ -216,13 +216,13 @@ public class IntroActivity extends AppCompatActivity {
             button_custom_visit = findViewById(R.id.button_custom_visit);
 
             //Highlighting Text
-            String introOne = "AFIA est une application de télémédecine qui met en relation les agents de santé des zones rurales et éloignées avec des médecins éloignés afin qu\\'ils puissent fournir des services de santé de haute qualité à leurs patients.";
+            String introOne = "AFIA est une application de télémédecine qui met en relation les agents de santé des zones rurales et éloignées avec des médecins éloignés afin qu'ils puissent fournir des services de santé de haute qualité à leurs patients.";
             String textToHighlightOne = "AFIA";
             String newString = introOne.replaceAll(textToHighlightOne, "<font color='red'>" + textToHighlightOne + "</font>");
             tvIntroOne.setText(Html.fromHtml(newString));
 
             if (position == 1) {
-                String two = "AFIA est une application de télémédecine qui met en relation les agents de santé des zones rurales et éloignées avec des médecins éloignés afin qu\\'ils puissent fournir des services de santé de haute qualité à leurs patients.";
+                String two = "AFIA est une application de télémédecine qui met en relation les agents de santé des zones rurales et éloignées avec des médecins éloignés afin qu'ils puissent fournir des services de santé de haute qualité à leurs patients.";
                 String textHighlight = "AFIA";
                 String newhighlight = two.replaceAll(textHighlight,
                         "<font color='red'>" + textHighlight + "</font>")
@@ -234,7 +234,7 @@ public class IntroActivity extends AppCompatActivity {
                     public void onClick(View view) {
 
                         progress = new ProgressDialog(IntroActivity.this, R.style.AlertDialogStyle);
-                        progress.setTitle("S\\'il vous plaît, attendez");
+                        progress.setTitle("S'il vous plaît, attendez");
                         progress.setMessage("Se connecter");
                         progress.show();
                         getLocationFromServer(BASE_URL);
@@ -456,7 +456,9 @@ public class IntroActivity extends AppCompatActivity {
                 Logger.logD(TAG, "Login Failure" + e.getMessage());
                 progress.dismiss();
                 DialogUtils dialogUtils = new DialogUtils();
-                dialogUtils.showerrorDialog(IntroActivity.this, "Error Login", "veuillez vérifier le nom d\\'utilisateur ou  le mot de passe saisis", "ok");
+                dialogUtils.showerrorDialog(IntroActivity.this, "Erreur de connexion",
+                        "veuillez vérifier le nom d'utilisateur ou  le mot de passe saisis",
+                        "d'accord");
             }
 
             @Override

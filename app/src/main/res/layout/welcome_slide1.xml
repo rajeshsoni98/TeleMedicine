@@ -28,7 +28,7 @@
             android:layout_marginRight="35dp"
             android:id="@+id/tv_intro_one"
             app:fontFamily="@fonts/Lato-Regular"
-            tools:text="AFIA est une application de télémédecine qui met en relation les agents de santé des zones rurales et éloignées avec des médecins éloignés afin qu\'ils puissent fournir des services de santé de haute qualité à leurs patients."
+            tools:text="AFIA est une application de télémédecine qui met en relation les agents de santé des zones rurales et éloignées avec des médecins éloignés afin qu'ils puissent fournir des services de santé de haute qualité à leurs patients."
             android:textColor="@color/font_black_welcome"
             android:textSize="17sp"
             android:lineSpacingExtra="2sp"

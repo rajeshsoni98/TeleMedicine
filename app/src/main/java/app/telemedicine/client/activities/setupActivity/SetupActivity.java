@@ -273,7 +273,7 @@ public class SetupActivity extends AppCompatActivity {
             focusView = mEmailView;
             cancel = true;
         } else if (!isEmailValid(email)) {
-            mEmailView.setError("Ce nom d\\'utilisateur n\\'est pas valide");
+            mEmailView.setError("Ce nom d'utilisateur n'est pas valide");
             focusView = mEmailView;
 
         }
@@ -281,7 +281,7 @@ public class SetupActivity extends AppCompatActivity {
 
         if (mDropdownLocation.getSelectedItemPosition() <= 0) {
             cancel = true;
-            Toast.makeText(SetupActivity.this, "Veuillez sélectionner une valeur dans la liste déroulante de l\\'emplacement", Toast.LENGTH_LONG);
+            Toast.makeText(SetupActivity.this, "Veuillez sélectionner une valeur dans la liste déroulante de l'emplacement", Toast.LENGTH_LONG);
         } else {
             location = mLocations.get(mDropdownLocation.getSelectedItemPosition() - 1);
         }
@@ -382,7 +382,7 @@ public class SetupActivity extends AppCompatActivity {
      */
     private List<String> getLocationStringList(List<Location> locationList) {
         List<String> list = new ArrayList<String>();
-        list.add("Sélectionnez l\\'emplacement");
+        list.add("Sélectionnez l'emplacement");
         for (int i = 0; i < locationList.size(); i++) {
             list.add(locationList.get(i).getDisplay());
         }
@@ -412,7 +412,7 @@ public class SetupActivity extends AppCompatActivity {
                         dialog.setTitle("Entrez la clé de licence")
                                 .setView(promptsView)
 
-                                .setPositiveButton("d\\'accord", new DialogInterface.OnClickListener() {
+                                .setPositiveButton("d'accord", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         Dialog d = (Dialog) dialog;
@@ -440,7 +440,7 @@ public class SetupActivity extends AppCompatActivity {
                                                     licenseUrl = url.getText().toString().trim();
 
                                                     if (licenseUrl.isEmpty()) {
-                                                        url.setError("Entrez l\\'URL du serveur");
+                                                        url.setError("Entrez l'URL du serveur");
                                                         url.requestFocus();
                                                         return;
                                                     }
@@ -506,7 +506,7 @@ public class SetupActivity extends AppCompatActivity {
                     }
                 } else {
                     ((RadioButton) v).setChecked(false);
-                    Toast.makeText(context, "Pour télécharger des mindmaps, vous avez besoin d\\'une connectivité Internet, veuillez allumer votre Internet", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "Pour télécharger des mindmaps, vous avez besoin d'une connectivité Internet, veuillez allumer votre Internet", Toast.LENGTH_SHORT).show();
                 }
                 break;
         }
@@ -533,7 +533,7 @@ public class SetupActivity extends AppCompatActivity {
 
         progress = new ProgressDialog(SetupActivity.this, R.style.AlertDialogStyle);
         ;//SetupActivity.this);
-        progress.setTitle("S\\'il vous plaît, attendez");
+        progress.setTitle("S'il vous plaît, attendez");
         progress.setMessage("Se connecter");
         progress.show();
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
@@ -671,7 +671,7 @@ public class SetupActivity extends AppCompatActivity {
                 progress.dismiss();
                 DialogUtils dialogUtils = new DialogUtils();
                 dialogUtils.showerrorDialog(SetupActivity.this,
-                        "Erreur de connexion", "veuillez vérifier le nom d\\'utilisateur ou  le mot de passe saisis", "d'accord");
+                        "Erreur de connexion", "veuillez vérifier le nom d'utilisateur ou  le mot de passe saisis", "d'accord");
                 mEmailView.requestFocus();
                 mPasswordView.requestFocus();
             }
@@ -745,7 +745,7 @@ public class SetupActivity extends AppCompatActivity {
                         public void onError(Throwable e) {
                             customProgressDialog.dismiss();
                             Log.e("MindMapURL", " " + e);
-                            Toast.makeText(SetupActivity.this, "Un problème est survenu lors du téléchargement des protocoles, veuillez contacter l\\'administrateur système", Toast.LENGTH_LONG).show();
+                            Toast.makeText(SetupActivity.this, "Un problème est survenu lors du téléchargement des protocoles, veuillez contacter l'administrateur système", Toast.LENGTH_LONG).show();
                         }
 
                         @Override
