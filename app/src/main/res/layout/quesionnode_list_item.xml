@@ -35,7 +35,7 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_gravity="center_vertical"
-                android:src="@drawable/ic_question_indicator"
+                android:src="@drawable/ic_ayu_logo_svg"
                 android:visibility="visible" />
 
             <TextView

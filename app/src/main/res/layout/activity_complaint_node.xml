@@ -47,8 +47,9 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginEnd="5dp"
-                android:src="@drawable/ic_question_indicator"
-                android:visibility="gone" />
+                android:src="@drawable/ic_ayu_logo_svg"
+                android:visibility="gone"
+                tools:visibility="visible"/>
 
 
             <TextView
@@ -59,7 +60,8 @@
                 android:fontFamily="@font/lato_bold"
                 android:text="@string/what_is_the_reason_for_your_visit"
                 android:textSize="18sp"
-                android:visibility="gone" />
+                android:visibility="gone"
+                tools:visibility="visible"/>
 
         </LinearLayout>
 
