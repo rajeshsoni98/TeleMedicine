@@ -5,8 +5,8 @@
     <string name="hint_required" translatable="false">Required</string>
     <string name="hint_optional" translatable="false">Optional</string>
     <string name="tag_optional" translatable="false">optional</string>
-    <string name="generic_ok" translatable="false">OK</string>
-    <string name="generic_cancel" translatable="false">Cancel</string>
+    <string name="generic_ok" translatable="false">d\'accord</string>
+    <string name="generic_cancel" translatable="false">Annuler</string>
     <string name="generic_yes" translatable="false">Yes</string>
     <string name="generic_no" translatable="false">No</string>
     <string name="generic_back" translatable="false">Back</string>
@@ -192,7 +192,7 @@
     <string name="visit_summary_button_upload" translatable="false">Upload</string>
     <string name="name_button_download" translatable="false">button_download</string>
     <string name="visit_summary_follow_up_date" translatable="false">Follow Up Date</string>
-    <string name="visit_summary_follow_up_reminder" translatable="false">Please remind the patient of their follow up date: </string>
+    <string name="visit_summary_follow_up_reminder" translatable="false">"Veuillez rappeler au patient sa date de suivi: "</string>
     <string name="visit_summary_upload_reminder" translatable="false">Please upload first before attempting to end the visit.</string>
 
 
@@ -370,11 +370,11 @@
     <string name="not_provided">Not provided</string>
 
     <!-- Patient Exit Survey -->
-    <string name="exit_survey_label" translatable="false">How was your experience?</string>
-    <string name="exit_survey_prompt" translatable="false">Enter your comments here</string>
-    <string name="exit_survey_skip" translatable="false">SKIP</string>
-    <string name="exit_survey_submit" translatable="false">Submit</string>
-    <string name="exit_survey_toast">Please select a smiley before submitting</string>
+    <string name="exit_survey_label" translatable="false">Comment était ton expérience?</string>
+    <string name="exit_survey_prompt" translatable="false">Entrez vos commentaires ici</string>
+    <string name="exit_survey_skip" translatable="false">Passez</string>
+    <string name="exit_survey_submit" translatable="false">Soumettre</string>
+    <string name="exit_survey_toast">Veuillez sélectionner un smiley avant de soumettre</string>
 
 
     <!--DB Backup-->
@@ -541,11 +541,11 @@
     <string name="failed_synced"><![CDATA[Failed synced, check your internet connection]]></string>
     <string name="visit_not_uploaded">Visit Not Uploaded</string>
     <string name="upload_started">Uploading...</string>
-    <string name="visit_uploaded_successfully">Visit Uploaded Successfully</string>
+    <string name="visit_uploaded_successfully">Visite téléversée avec succès</string>
     <string name="visit_uploaded_failed">Will be uploaded when internet is available</string>
     <string name="visitID">Visit ID</string>
 
-    <string name="end_visit_msg">Are you sure you want to end the visit?</string>
+    <string name="end_visit_msg">Voulez-vous vraiment terminer la visite?</string>
     <string name="prescription_not_downloaded_check_internet">Prescription not downloaded, check internet connection</string>
     <string name="privacy_reject_toast">You cannot register a patient without consent</string>
     <string name="not_answered">Not answered</string>
@@ -614,7 +614,7 @@
     <string name="mindmap_internect_connection">To download mindmaps you need a Internet connectivity, please turn on your Internet</string>
     <string name="days">days</string>
     <string name="contact">Contact</string>
-    <string name="has_a_new_prescription">has a new prescription</string>
+    <string name="has_a_new_prescription">a une nouvelle prescription</string>
     <string name="app_name" translatable="false">AFIA</string>
 
 </resources>
