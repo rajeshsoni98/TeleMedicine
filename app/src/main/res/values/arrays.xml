@@ -273,27 +273,27 @@
     </string-array>
 
     <string-array name="units">
-        <item>per Hour</item>
-        <item>per Day</item>
-        <item>Per Week</item>
-        <item>per Month</item>
-        <item>per Year</item>
+        <item>par heure</item>
+        <item>par jour</item>
+        <item>Pour la semaine</item>
+        <item>par mois</item>
+        <item>par an</item>
     </string-array>
 
     <string-array name="doctor_units">
-        <item>times per hour</item>
-        <item>time per day</item>
-        <item>times per week</item>
-        <item>times per month</item>
-        <item>times per year</item>
+        <item>fois par heure</item>
+        <item>temps par jour</item>
+        <item>fois par semaine</item>
+        <item>fois par mois</item>
+        <item>fois par an</item>
     </string-array>
 
     <string-array name="duration_units">
-        <item>Hours</item>
-        <item>Days</item>
-        <item>Weeks</item>
-        <item>Months</item>
-        <item>Years</item>
+        <item>Les heures</item>
+        <item>Journées</item>
+        <item>Semaines</item>
+        <item>Mois</item>
+        <item>Ans</item>
     </string-array>
 
     <array name="array_dot_active">

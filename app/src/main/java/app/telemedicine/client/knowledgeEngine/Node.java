@@ -592,10 +592,13 @@ public class Node implements Serializable {
                 if (node_opt.isSelected()) {
                     String associatedTest = node_opt.getText();
                     if (associatedTest != null && (associatedTest.trim().equals("Associated symptoms") ||
+                            associatedTest.trim().equals("Symptômes associés") ||
                             (associatedTest.trim().equals("H/o specific illness")) ||
+                            (associatedTest.trim().equals("Maladie spécifique à H / o")) ||
                             (associatedTest.trim().equals("ସମ୍ପର୍କିତ ଲକ୍ଷଣଗୁଡ଼ିକ")))) {
 
-                        if ((associatedTest.trim().equals("Associated symptoms")) || (associatedTest.trim().equals("ସମ୍ପର୍କିତ ଲକ୍ଷଣଗୁଡ଼ିକ"))) {
+                        if ((associatedTest.trim().equals("Associated symptoms")) ||
+                                (associatedTest.trim().equals("Symptômes associés")) || (associatedTest.trim().equals("ସମ୍ପର୍କିତ ଲକ୍ଷଣଗୁଡ଼ିକ"))) {
                             if (!generateAssociatedSymptomsOrHistory(node_opt).isEmpty()) {
                                 raw = raw + (generateAssociatedSymptomsOrHistory(node_opt)) + next_line;
                                 raw = raw.substring(6);
@@ -623,6 +626,7 @@ public class Node implements Serializable {
                 } else {
                     String associatedTest = node_opt.getText();
                     if (associatedTest != null && (associatedTest.trim().equals("Associated symptoms")
+                            || associatedTest.trim().equals("Symptômes associés")
                             || (associatedTest.trim().equals("ସମ୍ପର୍କିତ ଲକ୍ଷଣଗୁଡ଼ିକ")))) {
                         if (!generateAssociatedSymptomsOrHistory(node_opt).isEmpty()) {
                             raw = raw + (generateAssociatedSymptomsOrHistory(node_opt)) + next_line;
@@ -968,8 +972,10 @@ public class Node implements Serializable {
         final TextView endText = convertView.findViewById(R.id.dialog_2_numbers_text_2);
         endText.setVisibility(View.GONE);
         middleText.setVisibility(View.GONE);
-        final String[] units = new String[]{"per Hour", "per Day", "Per Week", "per Month", "per Year"};
-        final String[] doctorUnits = new String[]{"times per hour", "time per day", "times per week", "times per month", "times per year"};
+        final String[] units = new String[]{"par heure", "par jour", "Pour la semaine",
+                "par mois", "par an"};
+        final String[] doctorUnits = new String[]{"fois par heure", "temps par jour",
+                "fois par semaine", "fois par mois", "fois par an"};
         unitPicker.setDisplayedValues(units);
         quantityPicker.setMinValue(0);
         quantityPicker.setMaxValue(100);
@@ -1017,7 +1023,8 @@ public class Node implements Serializable {
         final TextView endText = convertView.findViewById(R.id.dialog_2_numbers_text_2);
         endText.setVisibility(View.GONE);
         middleText.setVisibility(View.GONE);
-        final String[] units = new String[]{"Hours", "Days", "Weeks", "Months", "Years"};
+        final String[] units = new String[]{"Les heures", "Journées", "Semaines",
+                "Mois", "Ans"};
         unitPicker.setDisplayedValues(units);
         quantityPicker.setMinValue(0);
         quantityPicker.setMaxValue(100);
@@ -1707,9 +1714,9 @@ public class Node implements Serializable {
         boolean flagPositive = false;
         boolean flagNegative = false;
 //        String mLanguagePositive = associatedSymptomNode.positiveCondition;
-        String mLanguagePositive = "Patient reports -" + next_line;
+        String mLanguagePositive = "Rapports des patients -" + next_line;
 //        String mLanguageNegative = associatedSymptomNode.negativeCondition;
-        String mLanguageNegative = "Patient denies -" + next_line;
+        String mLanguageNegative = "Le patient nie -" + next_line;
 
         Log.i(TAG, "generateAssociatedSymptomsOrHistory: " + mLanguagePositive);
         Log.i(TAG, "generateAssociatedSymptomsOrHistory: " + mLanguageNegative);
@@ -1825,8 +1832,9 @@ public class Node implements Serializable {
                 if (level == 0) {
                     question = big_bullet + " " + mOptions.get(i).findDisplay();
                     if ((mOptions.get(i).getText().equalsIgnoreCase("Associated symptoms"))
+                            || (mOptions.get(i).getText().equalsIgnoreCase("Symptômes associés"))
                             || (mOptions.get(i).getText().equalsIgnoreCase("ସମ୍ପର୍କିତ ଲକ୍ଷଣଗୁଡ଼ିକ"))) {
-                        question = question + next_line + "Patient reports -";
+                        question = question + next_line + "Rapports des patients -";
                     }
                 } else {
                     question = bullet + " " + mOptions.get(i).findDisplay();
@@ -1858,27 +1866,14 @@ public class Node implements Serializable {
             }
             else if (mOptions.get(i).getText() != null &&
                     ((mOptions.get(i).getText().equalsIgnoreCase("Associated symptoms"))
-                    || (mOptions.get(i).getText().equalsIgnoreCase("ସମ୍ପର୍କିତ ଲକ୍ଷଣଗୁଡ଼ିକ")))) {
+                    || (mOptions.get(i).getText().equalsIgnoreCase("Symptômes associés"))
+                            || (mOptions.get(i).getText().equalsIgnoreCase("ସମ୍ପର୍କିତ ଲକ୍ଷଣଗୁଡ଼ିକ")))) {
 
                 if (!mOptions.get(i).isTerminal()) {
                     stringsList.add(big_bullet + " " + mOptions.get(i).findDisplay() + next_line);
                     stringsList.add(mOptions.get(i).formQuestionAnswer(level + 1));
                 }
 
-                //                if (mOptions.get(i).getOptionsList().size() > 0) {
-                //
-                //                    for (int j = 0; j < mOptions.get(i).getOptionsList().size(); j++) {
-                //
-                //                        if (mOptions.get(i).getOptionsList().get(j).isSelected()
-                //                                || mOptions.get(i).getOptionsList().get(j).isNoSelected()) {
-                //
-                //                            if (!mOptions.get(i).isTerminal()) {
-                //                                stringsList.add(big_bullet + " " + mOptions.get(i).findDisplay() + next_line);
-                //                                stringsList.add(mOptions.get(i).formQuestionAnswer(level + 1));
-                //                            }
-                //                        }
-                //                    }
-                //                }
             }
             else
             {
@@ -1889,7 +1884,7 @@ public class Node implements Serializable {
             if (mOptions.get(i).isNoSelected()) {
                 if (!flag) {
                     flag = true;
-                    stringsListNoSelected.add("Patient denies -" + next_line);
+                    stringsListNoSelected.add("Le patient nie -" + next_line);
                 }
                 stringsListNoSelected.add(bullet_hollow + mOptions.get(i).findDisplay() + next_line);
                 Log.e("List", "" + stringsListNoSelected);
@@ -1911,7 +1906,7 @@ public class Node implements Serializable {
         Log.i(TAG, "formQuestionAnswer: " + mLanguage);
 
         if (mLanguage.equalsIgnoreCase("")) {
-            mLanguage = "Question not answered" + next_line;
+            mLanguage = "Question non répondue" + next_line;
         }
 
         return mLanguage;
