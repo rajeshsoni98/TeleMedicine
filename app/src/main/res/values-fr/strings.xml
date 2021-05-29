@@ -421,4 +421,15 @@
     <string name="pref_header_data_sync" translatable="false">Données et synchronisation</string>
     <string name="cloud_restore_header" translatable="false">Restaurer le nuage de formulaire</string>
     <string name="enter_license_key"><b>Entrez la clé de licence</b></string>
+
+    <!-- Vitals Screen Error-->
+
+    <string name="weight_error" translatable="false">Le poids doit être inférieur à %1$s kg</string>
+    <string name="height_error" translatable="false">La hauteur doit être comprise entre 0 et %1$s cm</string>
+    <string name="spo2_error" translatable="false">SpO2 doit être compris entre %1$s et %2$s</string>
+    <string name="pulse_error" translatable="false">L\'impulsion doit être comprise entre %1$s et %2$s</string>
+    <string name="bpsys_error" translatable="false">La pression systolique doit être comprise entre %1$s et %2$s</string>
+    <string name="bpdia_error" translatable="false">La pression diastolique doit être comprise entre %1$s et %2$s</string>
+    <string name="resp_error" translatable="false">La fréquence respiratoire doit être comprise entre %1$s et %2$s</string>
+    <string name="temp_error" translatable="false">La température doit être comprise entre %1$s et %2$s</string>
 </resources>
