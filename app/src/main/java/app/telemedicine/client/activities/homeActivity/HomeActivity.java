@@ -371,9 +371,9 @@ public class HomeActivity extends AppCompatActivity {
 //            case R.id.syncOption:
 //                refreshDatabases();
 //                return true;
-            case R.id.settingsOption:
+           /* case R.id.settingsOption:
                 settings();
-                return true;
+                return true;*/
             case R.id.updateProtocolsOption: {
 
 
